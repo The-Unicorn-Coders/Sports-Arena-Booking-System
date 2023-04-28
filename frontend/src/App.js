@@ -8,6 +8,7 @@ function App() {
           <div>
               <Switch>
                   <Route path="/"> <Home/> </Route>
+                  <Route path="/">< Navigation/> </Route>
               </Switch>
           </div>
       </Router>
