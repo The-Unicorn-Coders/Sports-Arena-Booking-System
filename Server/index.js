@@ -4,7 +4,8 @@ const cors = require('cors');
 const bodyParser=require('body-parser');
 const app = express();
 const port = process.env.PORT || 3330;
-const courtRouter=require('./routes/courts');
+//const courtRouter=require('./routes/courts');
+import {route} from './routes/route.js';
 app.use(bodyParser.json());
 //app.use(express.json());
 app.use(bodyParser.urlencoded({
