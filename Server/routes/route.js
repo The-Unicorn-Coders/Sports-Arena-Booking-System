@@ -1,11 +1,12 @@
 import {Router} from "express";
 const route = Router();
 import * as controller from '../controllers/appControllers.js';
+import {registerMail} from "../controllers/mailer";
 import Auth, {localVariables} from "../middlewear/auth.js";
 
 /**POST Methods*/
 route.route('/register').post(controller.register);
-route.route('/registerMail').post();
+route.route('/registerMail').post(registerMail);
 route.route('/authenticate').post((req, res) => res.end());
 route.route('/login').post(controller.login);
 
@@ -17,4 +18,4 @@ route.route('/createResetSession').get(controller.createResetSession);
 
 /**PUT Methods*/
 route.route('/updateUser').put(Auth, controller.updateUser);
-route.route('/resetPassword').put(controller.resetPassword);
+route.route('/resetPassword').put(controller.verifyUser, controller.resetPassword);
