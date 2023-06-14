@@ -1,4 +1,5 @@
 import {BrowserRouter as Router,Route,Switch } from "react-router-dom";
+import Bugg from "./Components/Bugg";
 import Feedback from "./Pages/Feedback";
 import Ratings from "./Pages/Ratings";
 
@@ -11,7 +12,7 @@ function App() {
       <Router>
           <div>
               <Switch>
-                  <Route path="/"> <Feedback/> </Route>
+                  <Route path="/"> <Bugg/> </Route>
                   {/* <Route path="/Home"> <Ratings/> </Route> */}
 
               </Switch>

@@ -1,0 +1,118 @@
+h3{
+    height: 42px;
+    width: 275px;
+    left: 38px;
+    top: 40px;
+    border-radius: undefinedpx;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #020202;
+    padding-top: 21px;
+    padding-left: 42px;
+
+    
+    
+}
+
+.subject1 {
+    font-weight: bold;
+    height: 22px;
+    width: 184px;
+
+
+border-radius: nullpx;
+font-family: Inter;
+font-size: 18px;
+font-weight: bold;
+
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+color: #000000;
+padding-top: 77px;
+margin-left: 5px;
+
+
+  }
+
+  #outlined-basic1 {
+
+    display: flex;
+    height: 20px;
+    width: 389px;
+    left: 38px;
+    top: 80px;
+    border-radius: 0px;
+    
+ 
+
+  }
+
+
+  .subject2 {
+    font-weight: bold;
+    height: 22px;
+    width: 184px;
+
+
+border-radius: nullpx;
+font-family: Inter;
+font-size: 18px;
+font-weight: bold;
+
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+color: #000000;
+padding-top: 77px;
+  }
+
+  #outlined-basic2 {
+    display: flex;
+    height: 130px;
+    width: 600px;
+    left: 38px;
+    top: 80px;
+    border-radius: 0px;
+  }
+
+
+  .comment-form {
+    margin-left: 42px;
+  }
+
+  .btn{
+    margin-top: 7px;
+    float: left;
+    height: 50px;
+    width: 138px;
+    left: 38px;
+    top: 360px;
+    border-radius: 5px;
+    padding: 13px 35px 13px 35px;
+    color: #ffffff;
+    background: #1C5555;
+
+font-family: Inter;
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+   
+  }
+  .comment-box{
+    background-color: #EEEEEE;
+    height: 457px;
+    width: 940px;
+    left: 5353px;
+    top: 3971px;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left:300px ;
+    padding-bottom: 40px;
+  }

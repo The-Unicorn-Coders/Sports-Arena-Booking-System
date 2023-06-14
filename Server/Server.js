@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 //var async = require('async');
 const app = express();
-const port = 5000;
+const port = 6000;
 
 // Connect to MongoDB
 mongoose.connect("mongodb://0.0.0.0:27017/ratings", {
@@ -67,6 +67,32 @@ app.post("/api/ratings",  (req, res) => {
     });
  
 });
+
+
+// API endpoint to submit a rating and review
+app.post("/api/buggs",  (req, res) => {
+    // console.log(" ratinf");
+   
+     const { rating, review } = req.body;
+     const newBuggs = new Buggs({ review });
+   
+     // newRating.save((err) => {
+       // if (err) {
+       //   res.status(500).json({ error: "Failed to save rating" });
+       // } else {
+       //   res.status(200).json({ message: "Rating saved successfully" });
+       // }
+     // });
+     newBuggs.save()
+       .then(() => {
+         res.status(200).json({ message: "Rating saved successfully" });
+       })
+       .catch((err) => {
+         console.error(err);
+         res.status(500).json({ error: "Failed to save rating" });
+       });
+    
+   });
 
 // Start the server
 app.listen(port, () => {
