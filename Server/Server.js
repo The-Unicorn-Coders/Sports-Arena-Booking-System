@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 //var async = require('async');
 const app = express();
-const port = 6000;
+const port = 5000;
 
 // Connect to MongoDB
 mongoose.connect("mongodb://0.0.0.0:27017/ratings", {
@@ -19,6 +19,10 @@ const ratingSchema = new mongoose.Schema({
     required: true,
   },
   review: {
+    type: String,
+    required: true,
+  },
+  name: {
     type: String,
     required: true,
   },
@@ -47,7 +51,7 @@ app.get("/api/ratings", async (req, res) => {
 app.post("/api/ratings",  (req, res) => {
  // console.log(" ratinf");
 
-  const { rating, review } = req.body;
+  const { name, review } = req.body;
   const newRating = new Rating({ rating, review });
 
   // newRating.save((err) => {
@@ -74,7 +78,7 @@ app.post("/api/buggs",  (req, res) => {
     // console.log(" ratinf");
    
      const { rating, review } = req.body;
-     const newBuggs = new Buggs({ review });
+     const newBuggs = new Buggs({ name,review });
    
      // newRating.save((err) => {
        // if (err) {
