@@ -1,0 +1,130 @@
+
+
+.wrapper{
+
+    background-color: #EEEEEE;
+    height: 457px;
+    width: 940px;
+    left: 5353px;
+    top: 3971px;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left:300px ;
+
+}
+
+.heading-1 {
+    height: 42px;
+    width: 275px;
+   
+    top: 28px;
+    border-radius: nullpx;
+    
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    
+text-align: left;
+color: #000000;
+padding-top: 35px;
+margin-left: 5px;
+
+
+  }
+
+  .heading-2{
+    height: 22px;
+    width: 363px;
+    left: 42px;
+    top: 81px;
+    border-radius: nullpx;
+    
+    font-family: Inter;
+font-size: 18px;
+font-weight: 500;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+color: #000000;
+
+  }
+
+  #Ratingicons{
+    height: px;
+width: 284px;
+left: 42px;
+top: 103px;
+border-radius: 0px;
+color: #000000;
+
+
+
+  }
+
+  .subject3{
+    height: 22px;
+width: 294px;
+left: 42px;
+top: 171px;
+border-radius: nullpx;
+
+font-family: Inter;
+font-size: 18px;
+font-weight: 500;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+color: #000000;
+
+
+
+  }
+
+  #outlined-basic3 {
+
+    height: 152px;
+    width: 575px;
+    left: 0px;
+    top: 0px;
+    border-radius: 4px;
+ 
+    
+    
+  }
+  
+
+  .s-btn{
+    margin-top: 86px;
+    margin-left: 300px;
+    height: 50px;
+width: 138px;
+left: 38px;
+top: 360px;
+border-radius: 5px;
+padding: 13px 35px 13px 35px;
+background: #1C5555;
+
+font-family: Inter;
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #FFFFFF;
+position: absolute;
+
+ }
+
+ .s-btn:hover {
+    background-color:#1C5555;
+  }
+
+  .comment-form{
+    margin-left: 38px;
+  }

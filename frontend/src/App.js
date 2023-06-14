@@ -11,7 +11,7 @@ function App() {
       <Router>
           <div>
               <Switch>
-                  <Route path="/"> <Ratings/> </Route>
+                  <Route path="/"> <Feedback/> </Route>
                   {/* <Route path="/Home"> <Ratings/> </Route> */}
 
               </Switch>
