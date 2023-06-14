@@ -1,4 +1,8 @@
 import {BrowserRouter as Router,Route,Switch } from "react-router-dom";
+import Feedback from "./Pages/Feedback";
+import Ratings from "./Pages/Ratings";
+
+
 
 
 function App() {
@@ -7,7 +11,9 @@ function App() {
       <Router>
           <div>
               <Switch>
-                  <Route path="/"> <Home/> </Route>
+                  <Route path="/"> <Ratings/> </Route>
+                  {/* <Route path="/Home"> <Ratings/> </Route> */}
+
               </Switch>
           </div>
       </Router>
