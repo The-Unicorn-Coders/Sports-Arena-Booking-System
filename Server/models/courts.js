@@ -12,8 +12,16 @@ const courtSchema = new Schema({
         type : String,
         required : true
     },
-    time : {
-        type : String,
+    openingTime: {
+        type: String,
+        required: true
+    },
+    closingTime: {
+        type: String,
+        required: true
+    },
+    price : {
+        type : Number,
         required : true
     }
 })

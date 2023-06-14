@@ -14,6 +14,10 @@ const groundSchema = new Schema({
     city : {
         type : String,
         required : true
+    },
+    location : {
+        type : Number,
+        required : true
     }
 })
 const Ground = mongoose.model("ground",groundSchema);
