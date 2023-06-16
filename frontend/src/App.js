@@ -9,15 +9,21 @@ import Ratings from "./Pages/Ratings";
 function App() {
   return (
     <div>
+
+<Feedback/> 
       <Router>
           <div>
               <Switch>
                   <Route path="/"> <Bugg/> </Route>
+                  <Route path="/"> </Route>
+                  <Route path="/"> <Ratings/> </Route>
                   {/* <Route path="/Home"> <Ratings/> </Route> */}
 
               </Switch>
           </div>
       </Router>
+
+      <Ratings/>
   
     </div>
   );

@@ -193,6 +193,7 @@
     }
 .comment{
     margin-bottom: 30px;
+   
 }
 .main_rating{
     margin-left: 40px;
@@ -302,4 +303,14 @@ background: #FBBC05;
 
 .flex{
   display: flex;
+}
+
+.currentDate{
+ margin-left: 1408px;
+ font-weight: 700;
+ color :#475569;
+ position: absolute;
+
+ ;
+ 
 }

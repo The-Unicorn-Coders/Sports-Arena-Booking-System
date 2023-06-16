@@ -33,6 +33,7 @@ const Ratings = () => {
     const [rating, setRating] = useState(0);
     const [review, setReview] = useState("");
     const [error, setError] = useState("");
+
   
     useEffect(() => {
       fetchRatings();
@@ -41,15 +42,18 @@ const Ratings = () => {
     const fetchRatings = async () => {
       try {
         const response=await fetch("http://localhost:5000/api/ratings");
-        alert(response);
+       
       //  setData(response.data);
         const data = await response.json();
-        alert(JSON.stringify(data));
+     
         setRatings(data);
       } catch (error) {
         console.log("Error retrieving ratings:", error);
       }
     };
+
+    
+ 
   
   
   
@@ -74,6 +78,8 @@ const Ratings = () => {
    // return  <div>{data}</div>
    return (
     <div className='grid'>
+
+
       
   
       
@@ -128,12 +134,15 @@ const Ratings = () => {
       <h2>Customer Reviews</h2>
       {ratings.map((rating, index) => (
         <div key={index}>
-  
+      <div className='currentDate'> <p> {rating.currentDate}</p></div>
            <div className="comment">
           <Rating name="size-small" defaultValue={rating.rating} />
-          <h2 className="name">by Jake Peralta</h2><br />
+          <h2 className="name">{rating.name1}</h2><br />
         </div>
+       
           <p> {rating.review}</p>
+         
+        
           <hr />
         </div>
         

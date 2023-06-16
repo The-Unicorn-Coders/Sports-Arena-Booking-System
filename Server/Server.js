@@ -22,6 +22,16 @@ const ratingSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  currentDate:{
+
+type: String,
+required:true,
+
+  },
+  name1:{
+    type: String,
+required:true,
+  }
 
 });
 
@@ -62,8 +72,8 @@ app.get("/api/ratings", async (req, res) => {
 app.post("/api/ratings",  (req, res) => {
  // console.log(" ratinf");
 
-  const { rating, review } = req.body;
-  const newRating = new Rating({ rating, review });
+  const { rating, review,currentDate,name1 } = req.body;
+  const newRating = new Rating({ rating, review,currentDate });
 
   // newRating.save((err) => {
     // if (err) {

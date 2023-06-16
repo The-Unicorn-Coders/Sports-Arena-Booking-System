@@ -30,6 +30,7 @@ const Feedback = () => {
   const [rating, setRating] = useState(0);
   const [review, setReview] = useState("");
   const [error, setError] = useState("");
+  const [currentDate, setCurrentDate] = useState(""); // New state variable for current date
 
   useEffect(() => {
     fetchRatings();
@@ -58,7 +59,7 @@ const Feedback = () => {
       const response = await fetch("http://localhost:5000/api/ratings", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ rating, review }),
+        body: JSON.stringify({ rating, review ,currentDate}),
       });
 
       if (response.ok) {
@@ -74,6 +75,15 @@ const Feedback = () => {
     }
   };
 
+      
+  const handleRatingSubmit = () => {
+    // Capture the current date
+    const date = new Date();
+    setCurrentDate(date.toLocaleDateString()); // Convert date to string format (e.g., "2023-06-16T12:34:56.789Z")
+
+    // TODO: Perform other actions related to rating submission
+    // ...
+  };
 
 
 
@@ -95,7 +105,9 @@ const Feedback = () => {
   <TextField    value={review}
             onChange={(e) => setReview(e.target.value)} id="outlined-basic3" label="Enter the text..." variant="outlined" />
 
-  <Button type="submit" variant="contained"  class='s-btn'>Submit</Button>
+  <Button type="submit" variant="contained"  class='s-btn' onClick={handleRatingSubmit}>Submit</Button>
+  {/* Display the current date */}
+
 
 </form>
 
