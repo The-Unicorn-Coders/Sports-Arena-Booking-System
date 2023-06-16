@@ -30,7 +30,7 @@ required:true,
   },
   name1:{
     type: String,
-required:true,
+
   }
 
 });

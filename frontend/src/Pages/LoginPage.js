@@ -1,9 +1,14 @@
 
 import './LoginPage.css';
+// import { useHistory } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 import jwtDecode from 'jwt-decode';
 import { useEffect, useRef,useState } from 'react';
 import { width } from '@mui/system';
+import Feedback from './Feedback';
+
+
 
 
 
@@ -40,6 +45,10 @@ const defaultProps = {};
  */
 const LoginPage = () => {
 
+    
+
+    const history = useNavigate();
+
     const[user,setUser]=useState({});
 
     const googleButton = useRef(null);
@@ -75,6 +84,7 @@ const LoginPage = () => {
       console.log(userObject);
       setUser(userObject);
       document.getElementById('signInDive').hidden=true;
+      history('/Ratings');
     }
   
     function handleSignOut(event){
@@ -115,7 +125,7 @@ const LoginPage = () => {
           
  <div id='signInDive'  ref={googleButton}  style={{width:800}} ></div>
 
- {
+ {/* {
         user && <div>
 
         <img src={user.picture}></img>
@@ -125,7 +135,7 @@ const LoginPage = () => {
 
 
         
-    }
+    } */}
             
            
 

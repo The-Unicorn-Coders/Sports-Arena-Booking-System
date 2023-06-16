@@ -1,4 +1,4 @@
-import {BrowserRouter as Router,Route,Switch } from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import Bugg from "./Components/Bugg";
 import Feedback from "./Pages/Feedback";
 import LoginPage from "./Pages/LoginPage";
@@ -11,19 +11,17 @@ import Ratings from "./Pages/Ratings";
 function App() {
   return (
     <div>
-<LoginPage/>
-{/* <Feedback/>  */}
-      <Router>
-          <div>
-              <Switch>
-                  {/* <Route path="/"> <Bugg/> </Route>
-                  <Route path="/"> </Route>
-                  <Route path="/"> <Ratings/> </Route> */}
-                  {/* <Route path="/Home"> <Ratings/> </Route> */}
+      <Routes>
+        
+              
+                  
+                  <Route path="login" element={<LoginPage/>} > </Route>
+                  <Route path="Feedback" element={<Feedback/>} > </Route>
+                  <Route path="Ratings" element={<Ratings/>} > </Route>
 
-              </Switch>
-          </div>
-      </Router>
+             
+         
+      </Routes>
 
       {/* <Ratings/> */}
   
