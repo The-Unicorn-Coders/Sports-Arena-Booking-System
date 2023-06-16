@@ -22,14 +22,25 @@ const ratingSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+
+});
+
+
+const buggSchema=new mongoose.Schema({
+
   name: {
     type: String,
     required: true,
   },
-});
+  buggReview:{
+    type: String,
+  
+  }
 
+});
 // Create the rating model
 const Rating = mongoose.model("Rating", ratingSchema);
+const Bugg = mongoose.model("Bugg", buggSchema);
 
 // Middleware
 app.use(cors());
@@ -51,7 +62,7 @@ app.get("/api/ratings", async (req, res) => {
 app.post("/api/ratings",  (req, res) => {
  // console.log(" ratinf");
 
-  const { name, review } = req.body;
+  const { rating, review } = req.body;
   const newRating = new Rating({ rating, review });
 
   // newRating.save((err) => {
@@ -75,11 +86,12 @@ app.post("/api/ratings",  (req, res) => {
 
 // API endpoint to submit a rating and review
 app.post("/api/buggs",  (req, res) => {
-    // console.log(" ratinf");
    
-     const { rating, review } = req.body;
-     const newBuggs = new Buggs({ name,review });
    
+     const { name, buggReview } = req.body;
+     const newBuggs = new Bugg({ name,buggReview });
+     console.log(name);
+     console.log(buggReview);
      // newRating.save((err) => {
        // if (err) {
        //   res.status(500).json({ error: "Failed to save rating" });
@@ -89,11 +101,11 @@ app.post("/api/buggs",  (req, res) => {
      // });
      newBuggs.save()
        .then(() => {
-         res.status(200).json({ message: "Rating saved successfully" });
+         res.status(200).json({ message: "Bugg saved successfully" });
        })
        .catch((err) => {
          console.error(err);
-         res.status(500).json({ error: "Failed to save rating" });
+         res.status(500).json({ error: "Failed to save bugg" });
        });
     
    });
