@@ -1,0 +1,85 @@
+.loginSide{
+    float: right;
+    padding: 40px;
+    width: 60%;
+    margin-left: 39px;
+   
+   
+}
+.loginContainer{
+    
+
+}
+.logContain{
+    margin-left: 250px;
+    margin-top: 80px;
+}
+
+input{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 320px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+label{
+    font-size: 20px;
+    font-family:inherit
+}
+button{
+    margin-top: 30px;
+    width: 343px;
+    padding: 9px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #1C5555;
+    color: white;
+    outline: none;
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+.Picture1{
+    position: absolute;
+    height:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 700px;
+    z-index: 1;
+  
+   
+}
+.pictureSide{
+    width: 40%;
+    position: relative;
+}
+.Picture2{
+    position: absolute;
+    z-index: 2;
+    top: 270px; /* Adjust the top position as needed */
+    left: 130px;
+    width: 400px;
+
+}
+.Picture3{
+    position: absolute;
+    z-index: 2;
+    top: 270px; /* Adjust the top position as needed */
+    left: 130px;
+    width: 160px;
+
+}
+#signInDive{
+
+    width: 100%;
+    margin-top: 30px;
+    height: 40px;
+    border: 10px;
+    outline: none;
+   
+    
+}
