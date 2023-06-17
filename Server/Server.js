@@ -44,6 +44,7 @@ const buggSchema=new mongoose.Schema({
   },
   buggReview:{
     type: String,
+    required: true,
   
   }
 
@@ -63,6 +64,16 @@ app.get("/api/ratings", async (req, res) => {
     res.status(200).json(ratings);
   } catch (error) {
     res.status(500).json({ error: "Failed to retrieve ratings" });
+    console.log(error);
+  }
+});
+
+app.get("/api/buggs", async (req, res) => {
+  try {
+    const buggs = await Bugg.find();
+    res.status(200).json(buggs);
+  } catch (error) {
+    res.status(500).json({ error: "Failed to retrieve buggs" });
     console.log(error);
   }
 });
@@ -124,3 +135,25 @@ app.post("/api/buggs",  (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+
+
+//Bug report display
+// const express = require('express');
+
+
+
+// app.get('/api/table', (req, res) => {
+//   const data = [
+//     { id: 1, name: 'John', age: 25 },
+//     { id: 2, name: 'Jane', age: 30 },
+//     { id: 3, name: 'Bob', age: 35 }
+//   ];
+//   res.json(data);
+// });
+
+// app.listen(3000, () => {
+//   console.log('Server listening on port 3000');
+// });
+
+

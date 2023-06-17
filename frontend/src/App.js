@@ -1,5 +1,6 @@
 import {Routes, Route} from "react-router-dom";
 import Bugg from "./Components/Bugg";
+import DisplayBug from "./Components/DisplayBug";
 import Feedback from "./Pages/Feedback";
 import LoginPage from "./Pages/LoginPage";
 import Ratings from "./Pages/Ratings";
@@ -11,7 +12,7 @@ import Ratings from "./Pages/Ratings";
 function App() {
   return (
     <div>
-      <Routes>
+      {/* <Routes>
         
               
                   
@@ -22,9 +23,9 @@ function App() {
 
              
          
-      </Routes>
+      </Routes> */}
 
-      {/* <Ratings/> */}
+      <DisplayBug/>
   
     </div>
   );

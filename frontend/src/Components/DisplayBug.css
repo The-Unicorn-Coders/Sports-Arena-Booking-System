@@ -1,0 +1,49 @@
+.heading{
+   margin: 30px;
+   
+
+}
+table{
+    margin-top: 50px;
+    
+    
+}
+
+.Topic{
+  
+    font-family: Inter;
+    font-size: 40px;
+    text-align: center;
+    color:   #1C5555;
+    font-weight: 700;
+}
+
+td{
+    border: 2px solid  #1C5555;
+    padding: 20px;
+    background-color: rgb(244, 240, 240);
+}
+th{
+    border: 3px solid  #1C5555;
+    padding: 20px;
+    background-color: #1C5555;
+    color: white;
+   
+    font-size: 20px;
+}
+.dec{
+    width: 600px;
+}
+.tableContainer{
+    margin-top: -220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* Adjust this value as needed */
+}
+form{
+    margin-top: 200px;
+}
+.dec1{
+    width: 200px;
+}
