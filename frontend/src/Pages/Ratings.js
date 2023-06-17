@@ -28,7 +28,7 @@ const defaultProps = {};
  */
 const Ratings = () => {
 
-
+  const [averageRating, setAverageRating] = useState(0);
     const [ratings, setRatings] = useState([]);
     const [rating, setRating] = useState(0);
     const [review, setReview] = useState("");
@@ -47,6 +47,9 @@ const Ratings = () => {
         const data = await response.json();
      
         setRatings(data);
+        calculateAverageRating(data);
+console.log(averageRating)
+      
       } catch (error) {
         console.log("Error retrieving ratings:", error);
       }
@@ -54,7 +57,12 @@ const Ratings = () => {
 
     
  
-  
+    const calculateAverageRating = (data) => {
+      const totalRatings = data.length;
+      const sumRatings = data.reduce((acc, rating) => acc + rating.rating, 0);
+      const average = sumRatings / totalRatings;
+      setAverageRating(average);
+    };
   
   
   
@@ -110,7 +118,7 @@ const Ratings = () => {
         <div className="heading2">Please rate your experience with us</div>
       </div>
       <div className='flex'>
-        <div className="quantity">4.2</div>
+        <div className="quantity" value={averageRating} >{averageRating.toFixed(1)}</div>
         <div className="main_rating">
           <Rating name="size-large" defaultValue={2} size="large" />
         </div>
@@ -141,6 +149,7 @@ const Ratings = () => {
         </div>
        
           <p> {rating.review}</p>
+          
          
         
           <hr />

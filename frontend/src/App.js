@@ -12,7 +12,7 @@ import Ratings from "./Pages/Ratings";
 function App() {
   return (
     <div>
-      {/* <Routes>
+      <Routes>
         
               
                   
@@ -20,12 +20,14 @@ function App() {
                   <Route path="Feedback" element={<Feedback/>} > </Route>
                   <Route path="Ratings" element={<Ratings/>} > </Route>
                   <Route path="Buggs" element={<Bugg/>} > </Route>
+                  <Route path="displayBug" element={<DisplayBug/>} > </Route>
+
 
              
          
-      </Routes> */}
+      </Routes>
 
-      <DisplayBug/>
+      {/* <DisplayBug/> */}
   
     </div>
   );
