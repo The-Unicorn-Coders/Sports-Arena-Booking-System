@@ -114,19 +114,28 @@ console.log(averageRating)
       </div> */}
   
   <div>
+    <div className='leftSideRating'>
         <div className="heading1">Ratings and Reviews</div>
         <div className="heading2">Please rate your experience with us</div>
-      </div>
-      <div className='flex'>
+     
+      <div>
         <div className="quantity" value={averageRating} >{averageRating.toFixed(1)}</div>
+        <Rating name="size-large" defaultValue={7} size="large" />
+        </div>
+
+        <div  className='rightSideRating'>
         <div className="main_rating">
           <Rating name="size-large" defaultValue={2} size="large" />
+          
         </div>
         <div className="Rating_Stars">
-        <div className="rectangleStars1"></div>
+        <div className="rectangleStars1" style={{ width: `${(averageRating / 5) * 100}%` }}></div>
+      </div>
+
+      </div>
+      
       </div>
       </div>
-    
   
       <br />
   
