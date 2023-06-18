@@ -1,0 +1,151 @@
+.bar{
+    position: absolute;
+    width: 1018px;
+    height: 154px;
+    left: 116px;
+    top: 808px;
+    }
+.field1{
+    background: #191919;
+    position: absolute;
+    width: 157px;
+    height: 154px;
+    left: 4px;
+    }
+.f1{
+    width: 57px;
+    height: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    }
+.field2{   
+    background: #191919;
+    position: absolute;
+    width: 254px;
+    height: 154px;
+    left: 167px;
+    
+    }
+.f2{
+    width: 57px;
+    height: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    }
+.field3{
+    background: #191919;
+    position: absolute;
+    width: 157px;
+    height: 154px;
+    left: 427px;
+    }
+
+.field4{
+    background: #191919;
+    position: absolute;
+    width: 157px;
+    height: 154px;
+    left: 590px;
+     }
+.field5{
+    background: #191919;
+    position: absolute;
+     width: 269px;
+    height: 154px;
+    left: 753px;
+     }
+.search{
+background: #1C5555;
+position: absolute;
+width: 215px;
+height: 154px;
+left: 1025px;
+}
+.s{
+    width: 57px;
+    height: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 200px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    }
+.sicon{
+position: absolute;
+box-sizing: content-box;
+width: 50px;
+height: 49px;
+top: 40px;
+left: 90px;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.sport{
+width: 123px;
+height: 29px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.selectbox{
+    font-family: 'Inter';
+    font-style: normal; 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    background: #191919;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.datebox{
+    font-family: 'Inter';
+    font-style: normal; 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    background: #191919;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0; 
+}
+/*
+        position: absolute;
+
+        
+        width: 46px;
+        height: 58.43px;
+        mix-blend-mode: lighten;
+        border: 1px solid #000000;
+  */
+   
+    
+    

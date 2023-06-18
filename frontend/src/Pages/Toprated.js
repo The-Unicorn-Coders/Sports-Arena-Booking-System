@@ -1,6 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import './Toprated.css';
 
 // #region constants
 
@@ -22,14 +21,15 @@ const defaultProps = {};
 /**
  * 
  */
-const Home = () => {
+const Toprated = () => {
     return <div>
-        fdvfdd
+        <img id="Toprated1" src="Top Rated Arenas.png" alt="imagetoprated" />
+   
     </div>;
 }
 
-Home.propTypes = propTypes;
-Home.defaultProps = defaultProps;
+Toprated.propTypes = propTypes;
+Toprated.defaultProps = defaultProps;
 // #endregion
 
-export default Home;
+export default Toprated;
