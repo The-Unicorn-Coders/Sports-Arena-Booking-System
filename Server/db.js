@@ -1,10 +1,18 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 
-mongoose.connect('mongodb+srv://gamagepdw20:SportsArena5@arenacluster.zqtz2vv.mongodb.net/ArenaDB?retryWrites=true&w=majority/Arena', 
-{
-    useNewUrlParser: true,
-    useUnifiedTopology:true
-});
-mongoose.Promise=global.Promise;
+import { MongoMemoryServer } from "mongodb-memory-server";
+import ENV from "./config.js";
 
-module.exports = mongoose.connection;
+async function connect(){
+
+    const mongodb = await MongoMemoryServer.create();
+    const getUri = mongodb.getUri();
+
+    mongoose.set('strictQuery', true)
+    // const db = await mongoose.connect(getUri);
+    const db = await mongoose.connect(ENV.ATLAS_URI);
+    console.log("Database Connected")
+    return db;
+}
+
+export default connect;
