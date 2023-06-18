@@ -25,6 +25,8 @@ const defaultProps = {};
  */
 const Pinnedarena = () => {
     return <div className='Pinnedarena'>
+
+        <div>
                 <div>
         {/* This is a div that contains a span with a class of 'newArenaHeader'*/}
         <p className='newArenaHeader'>Pinned Arenas</p>
@@ -53,7 +55,7 @@ const Pinnedarena = () => {
         <center><span className='f1'>Sport</span></center>
         </div>
         </div>
-
+        </div>
     </div>;
 }
 

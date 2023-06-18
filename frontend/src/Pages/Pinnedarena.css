@@ -7,11 +7,14 @@
     padding: 36px 128px;
     gap: 10px;
     position: absolute;
-    width: 1200px;
-    height: 629px;
-    top: 290px;
+    width: 1250px;
+    height: 450px;
+    top: 350px;
     background: #FFFFFF;
     margin-top: 700px;
+    background-color: rgb(0, 0, 0);
+    padding-top: 60px;
+   
     }
     .newArenaHeader{
     
@@ -27,7 +30,8 @@
     order: 0;
     flex-grow: 0;
     left:110px;
-    position: absolute;
+    
+   
     }
     .newlyPly1{
     position: absolute;
