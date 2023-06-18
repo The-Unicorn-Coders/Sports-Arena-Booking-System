@@ -9,9 +9,10 @@ gap: 10px;
 position: absolute;
 width: 1200px;
 height: 629px;
-top: 2400px;
+top: 3090px;
 background: #FFFFFF;
 margin-top: 700px;
+
 }
 .newArenaHeader{
 
@@ -28,6 +29,7 @@ order: 0;
 flex-grow: 0;
 left:110px;
 position: absolute;
+margin-top: -360px;
 }
 .newlyPly1{
 position: absolute;

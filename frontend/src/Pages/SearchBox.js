@@ -20,6 +20,8 @@ import SearchIcon from '@mui/icons-material/Search';
       </div>
 
       {/* Location field */}
+
+      <div className='test'>
       <div className='field2'>
         <center><span className='f1'>Location</span></center>
       </div>
@@ -66,6 +68,7 @@ import SearchIcon from '@mui/icons-material/Search';
       <div className='search'>
         <center><span className='s'>Search</span></center>
         <SearchIcon className='sicon' sx={{ background: "#1C5555", color: '#FFFFFF' }} />
+      </div>
       </div>
     </div>
   )

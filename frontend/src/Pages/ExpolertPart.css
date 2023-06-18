@@ -51,6 +51,7 @@
   background: #fff;
   border: 3px solid #1c5555;
   color: #1c5555;
+
 }
 
 .xbuttons button:hover {
@@ -70,6 +71,7 @@
   font-size: 32px;
   line-height: 39px;
   color: #1c5555;
+  position: absolute;
 }
 
 .caption {

@@ -7,6 +7,7 @@ import Heroslider from "./Pages/Heroslider";
 import HHeader1 from "./Pages/HHeader1";
 import Home from "./Pages/Home";
 import NewlyAddedArena from "./Pages/NewlyAddedArena";
+import Pinnedarena from "./Pages/Pinnedarena";
 import SportButtons from "./Pages/SportButtons";
 import Toprated from "./Pages/Toprated";
 
@@ -17,6 +18,7 @@ function App() {
     <Header/>
     <Heroslider/>
     <HHeader1/>
+    <Pinnedarena/>
    
     <ExpolerPart/>
     <Toprated/>
