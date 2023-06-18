@@ -29,8 +29,9 @@ function SportButtons(props) {
         <Button className='sport2' variant="outlined" style={{ textTransform: 'capitalize' }}>
           Billiard
         </Button>
+      
         <Button className='sport2' variant="outlined" style={{ textTransform: 'capitalize' }}>
-          Rowing
+        Rowing
         </Button>
         <Button className='sport2' variant="outlined" style={{ textTransform: 'capitalize' }}>
           Gym

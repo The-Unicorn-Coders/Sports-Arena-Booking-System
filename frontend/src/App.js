@@ -1,6 +1,7 @@
 import {BrowserRouter as Router,Route,Switch } from "react-router-dom";
 import BookSports from "./Pages/BookSports";
 import ExpolerPart from "./Pages/ExpolerPart";
+import Footer from "./Pages/Footer";
 import Header from "./Pages/Header";
 import Heroslider from "./Pages/Heroslider";
 import HHeader1 from "./Pages/HHeader1";
@@ -22,6 +23,8 @@ function App() {
 
     <NewlyAddedArena/>
   
+
+  <Footer/>
   
    
 
