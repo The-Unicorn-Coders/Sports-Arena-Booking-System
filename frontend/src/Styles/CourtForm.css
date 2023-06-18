@@ -1,0 +1,200 @@
+* > * {
+    font-family: Inter;
+    margin: 0;
+}
+
+.App-header {
+    background: white;
+    padding: 0 20px 0 20px;
+    position: absolute;
+    width: 490px;
+    height: 1320px;
+    left: 400px;
+    top: 40px;
+
+    background: #eeeeee;
+    border-radius: 5px;
+    padding: 0 25px 0 20px;
+}
+
+hr {
+    display: block;
+    margin-top: 1.6em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    position: relative;
+    top: 40px;
+}
+.head1 {
+    color: #0e351f;
+    left: 10px;
+    font-size: 24px;
+    position: relative;
+    top: 20px;
+}
+.head2 {
+    color: #0e351f;
+    left: 6px;
+    font-size: 16px;
+    position: relative;
+    top: 38px;
+}
+.head3 {
+    left: 5px;
+    font-size: 16px;
+    position: relative;
+    top: 50px;
+}
+.courtName {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+}
+.test1 {
+    position: relative;
+    top: 60px;
+    left: 10px;
+}
+.test2 {
+    position: absolute;
+    top: 40px;
+    left: 290px;
+}
+
+.drop {
+    position: absolute;
+    top: 660px;
+    left: 200px;
+}
+.drop1 {
+    position: absolute;
+    top: 660px;
+    left: 360px;
+}
+
+.drop2 {
+    position: absolute;
+    top: 730px;
+    left: 200px;
+}
+.drop3 {
+    position: absolute;
+    top: 730px;
+    left: 360px;
+}
+.drop4 {
+    position: absolute;
+    top: 800px;
+    left: 200px;
+}
+.drop5 {
+    position: absolute;
+    top: 800px;
+    left: 360px;
+}
+.drop6 {
+    position: absolute;
+    top: 870px;
+    left: 200px;
+}
+.drop7 {
+    position: absolute;
+    top: 870px;
+    left: 360px;
+}
+.drop8 {
+    position: absolute;
+    top: 940px;
+    left: 200px;
+}
+.drop9 {
+    position: absolute;
+    top: 940px;
+    left: 360px;
+}
+.drop10 {
+    position: absolute;
+    top: 1010px;
+    left: 200px;
+}
+.drop11 {
+    position: absolute;
+    top: 1010px;
+    left: 360px;
+}
+.drop12 {
+    position: absolute;
+    top: 1080px;
+    left: 200px;
+}
+.drop13 {
+    position: absolute;
+    top: 1080px;
+    left: 360px;
+}
+.day1 {
+    position: absolute;
+    top: 20px;
+    left: -175px;
+    font-size: 16px;
+}
+.day2 {
+    position: absolute;
+    top: 20px;
+    left: -175px;
+    font-size: 16px;
+}
+.day3 {
+    position: absolute;
+    top: 20px;
+    left: -175px;
+    font-size: 16px;
+}
+.day4 {
+    position: absolute;
+    top: 20px;
+    left: -175px;
+    font-size: 16px;
+}
+.day5 {
+    position: absolute;
+    top: 20px;
+    left: -175px;
+    font-size: 16px;
+}
+.day6 {
+    position: absolute;
+    top: 20px;
+    left: -175px;
+    font-size: 16px;
+}
+.day7 {
+    position: absolute;
+    top: 20px;
+    left: -175px;
+    font-size: 16px;
+}
+
+.tableP {
+    position: relative;
+    left: 5px;
+    top: 60px;
+    bottom: 50px;
+}
+.addbtn {
+    position: relative;
+    top: 740px;
+    left: 20px;
+    width: 150px;
+}
+.latbtn {
+    position: relative;
+    top: 700px;
+    left: 155px;
+}
+Button {
+    background-color: #0e351f;
+}

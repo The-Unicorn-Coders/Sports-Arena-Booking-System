@@ -1,16 +1,12 @@
 import {BrowserRouter as Router,Route,Switch } from "react-router-dom";
+import GroundForm from "./Components/GroundForm";
 
 
 function App() {
   return (
     <div>
-      <Router>
-          <div>
-              <Switch>
-                  <Route path="/"> <Home/> </Route>
-              </Switch>
-          </div>
-      </Router>
+        <GroundForm/>
+
   
     </div>
   );
