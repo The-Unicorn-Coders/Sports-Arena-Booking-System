@@ -109,7 +109,7 @@ app.post("/api/ratings",  (req, res) => {
 app.post("/api/buggs",  (req, res) => {
    
    
-     const { name, buggReview } = req.body;
+     const { name,buggReview } = req.body;
      const newBuggs = new Bugg({ name,buggReview });
      console.log(name);
      console.log(buggReview);

@@ -29,7 +29,7 @@ const Bugg = () => {
 
     const [ratings, setRatings] = useState([]);
     const [name, setName] = useState("");
-    const [review, setReview] = useState("");
+    const [buggReview, setReview] = useState("");
     const [error, setError] = useState("");
   
     useEffect(() => {
@@ -52,7 +52,7 @@ const Bugg = () => {
      
       e.preventDefault();
   
-      if (name.trim() === "" || review.trim() === "") {
+      if (name.trim() === "" || buggReview.trim() === "") {
           alert(" Please provide a rating and review");
         setError("Please provide a rating and review");
         return;
@@ -63,7 +63,7 @@ const Bugg = () => {
         const response = await fetch("http://localhost:5000/api/buggs", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name,review }),
+          body: JSON.stringify({ name,buggReview }),
         });
   
         if (response.ok) {
@@ -95,7 +95,7 @@ const Bugg = () => {
          <br/><br/>
     
          <label for="fname" class="subject2">Problem occured</label><br/>
-         <TextField value={review} onChange={(e) => setReview(e.target.value)} id="outlined-basic2" label="Enter the text...." variant="outlined"    /><br/>
+         <TextField value={buggReview} onChange={(e) => setReview(e.target.value)} id="outlined-basic2" label="Enter the text...." variant="outlined"    /><br/>
     
     
          <Button type="submit" variant="contained"  class='btn'>Report</Button>
