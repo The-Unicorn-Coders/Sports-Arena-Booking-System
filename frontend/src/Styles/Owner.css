@@ -1,0 +1,10 @@
+.upper{
+    background-image: url("../assets/back.png");
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.custom-header {
+    padding-right: 30vh;
+  }
