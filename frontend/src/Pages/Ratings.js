@@ -148,7 +148,7 @@ const Ratings = () => {
             <Rating
               className="mainRating"
               name="size-large"
-              defaultValue={parseInt(averageRating)}
+              defaultValue={averageRating.toFixed(1)}
               precision={0.5}
               size="large"
               readOnly
