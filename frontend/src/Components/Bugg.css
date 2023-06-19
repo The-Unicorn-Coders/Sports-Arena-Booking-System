@@ -78,6 +78,9 @@ padding-top: 77px;
     left: 38px;
     top: 80px;
     border-radius: 0px;
+    padding: 10PX;
+    font-weight: 700;
+    background-color: #EEEEEE;
   }
 
 
@@ -115,4 +118,7 @@ text-align: left;
     margin-top: 50px;
     margin-left:300px ;
     padding-bottom: 40px;
+  }
+  .bugContainer{
+    margin-top: -50px;
   }

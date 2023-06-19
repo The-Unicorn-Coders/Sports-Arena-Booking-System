@@ -87,7 +87,7 @@ const Bugg = () => {
         <h3>Report a bug</h3><br/>
                      
         <form class="comment-form"  onSubmit={submitRating}>
-    
+      <div className="bugContainer">
          <label for="fname" class="subject1">Name</label><br/>
          <TextField  value={name}  onChange={(e) => setName(e.target.value)} id="outlined-basic1" label="Enter name" variant="outlined"  />
     
@@ -95,12 +95,12 @@ const Bugg = () => {
          <br/><br/>
     
          <label for="fname" class="subject2">Problem occured</label><br/>
-         <TextField value={buggReview} onChange={(e) => setReview(e.target.value)} id="outlined-basic2" label="Enter the text...." variant="outlined"    /><br/>
+         <textarea placeholder="Enter Here" value={buggReview} onChange={(e) => setReview(e.target.value)} id="outlined-basic2" label="Enter the text...." variant="outlined"    /><br/>
     
     
          <Button type="submit" variant="contained"  class='btn'>Report</Button>
        
-                        
+         </div>           
           
         </form>
     </div>
