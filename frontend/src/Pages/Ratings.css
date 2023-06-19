@@ -314,3 +314,37 @@ background: #FBBC05;
  
 }
 
+.leftSideRating{
+  display: flex;
+  
+}
+
+.rectangleStars1{
+  color: #FBBC05;
+  
+}
+
+.rightSideRatingCloumn{
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+
+}
+.rightSideRating{
+  display: flex;
+
+
+
+}
+
+.rectangleStars1{
+  margin-top: 7px;
+  background-color:  #FBBC05;
+}
+.mainRating{
+  margin-left: 32px;
+}
+.rateNum{
+  margin-top: 4px;
+  margin-left: 5px;
+}
