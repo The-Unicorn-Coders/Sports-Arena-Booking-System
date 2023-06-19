@@ -30,6 +30,7 @@ const Bugg = () => {
     const [ratings, setRatings] = useState([]);
     const [name, setName] = useState("");
     const [buggReview, setReview] = useState("");
+
     const [error, setError] = useState("");
   
     useEffect(() => {
@@ -53,8 +54,8 @@ const Bugg = () => {
       e.preventDefault();
   
       if (name.trim() === "" || buggReview.trim() === "") {
-          alert(" Please provide a rating and review");
-        setError("Please provide a rating and review");
+          alert(" Please provide a bug");
+        setError("Please provide a bug");
         return;
       }
   
@@ -63,7 +64,7 @@ const Bugg = () => {
         const response = await fetch("http://localhost:5000/api/buggs", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name,buggReview }),
+          body: JSON.stringify({ name,buggReview, }),
         });
   
         if (response.ok) {
@@ -73,10 +74,10 @@ const Bugg = () => {
           setReview("");
           setError("");
         } else {
-          setError("Failed to save rating");
+          setError("Failed to save bug");
         }
       } catch (error) {
-        console.log("Error submitting rating:", error);
+        console.log("Error submitting bug:", error);
       }
     };
   
