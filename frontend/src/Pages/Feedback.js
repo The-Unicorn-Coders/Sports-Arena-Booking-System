@@ -102,7 +102,7 @@ const Feedback = () => {
 
   <label for="fname" class="subject3">Add your reviews here</label>
   <br/>
-  <TextField    value={review}
+  <textarea placeholder="Enter Here" value={review}
             onChange={(e) => setReview(e.target.value)} id="outlined-basic3" label="Enter the text..." variant="outlined" />
 
   <Button type="submit" variant="contained"  class='s-btn' onClick={handleRatingSubmit}>Submit</Button>
