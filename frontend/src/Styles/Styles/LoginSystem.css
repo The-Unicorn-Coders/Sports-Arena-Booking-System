@@ -1,0 +1,114 @@
+* > * {
+  font-family: Inter;
+  margin: 0;
+}
+
+.loginSide {
+  float: right;
+  padding: 40px;
+  width: 60%;
+  margin-left: 39px;
+  border-color: black;
+}
+.test {
+  position: absolute;
+  top: 140px;
+  right: 400px;
+  font-size: 24px;
+}
+.email {
+  position: absolute;
+  top: 20px;
+  right: 200px;
+}
+.password {
+  position: absolute;
+  top: 20px;
+  right: 200px;
+}
+.check {
+  position: absolute;
+  top: 335px;
+  right: 430px;
+  font-size: 16px;
+}
+.check1 {
+  position: absolute;
+  top: 20px;
+  right: 190px;
+}
+.link {
+  position: absolute;
+  top: 365px;
+  right: 465px;
+}
+.link2 {
+  position: absolute;
+  top: 525px;
+  right: 365px;
+  font-size: 13px;
+}
+.logContain {
+  margin-left: 250px;
+  margin-top: 80px;
+}
+.btn {
+  position: absolute;
+  top: 45px;
+  right: 200px;
+}
+.btn1 {
+  position: absolute;
+  top: 45px;
+  right: 200px;
+}
+
+input {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  width: 320px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.Picture1 {
+  position: absolute;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 700px;
+  z-index: 1;
+}
+.pictureSide {
+  width: 40%;
+  position: relative;
+}
+.Picture2 {
+  position: absolute;
+  z-index: 2;
+  top: 270px; /* Adjust the top position as needed */
+  left: 130px;
+  width: 400px;
+}
+.Picture3 {
+  position: absolute;
+  z-index: 2;
+  top: 170px; /* Adjust the top position as needed */
+  left: 90px;
+  width: 160px;
+}
+.Picture4 {
+  position: absolute;
+  z-index: 2;
+  top: 50px; /* Adjust the top position as needed */
+  left: 30px;
+  width: 90px;
+}
+#signInDive {
+  width: 100%;
+  margin-top: 30px;
+  height: 40px;
+  border: 10px;
+  outline: none;
+}

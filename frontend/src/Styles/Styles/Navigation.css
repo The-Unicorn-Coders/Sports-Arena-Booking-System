@@ -1,0 +1,58 @@
+.appbar {
+    position: absolute;
+    width: 1512px;
+    height: 100px;
+    left: 0px;
+    top: 1px;
+    }
+ 
+    .arena {
+        
+        position: absolute;
+        top: 10px;
+        left: 90px;
+        width: 120px;
+        height: 60px;
+        font-family: 'Bebas Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 60px;
+        /* identical to box height */
+        letter-spacing: 0.1em;
+        color: #B7F500;
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0; 
+    }
+    .arena2 {
+            
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    line-height: 0px;
+    /* identical to box height */
+    color: #B7F500;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0; 
+    }
+    
+    .buttons{
+        margin-left: 75%;
+        position: absolute;
+        top: 30px;
+        left: 90px;  
+    }
+    
+    .imglogo{
+        position: absolute;
+        top: 20px;
+        left: 40px; 
+        mix-blend-mode: lighten;
+        
+}

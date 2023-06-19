@@ -1,0 +1,16 @@
+* > * {
+  font-family: Inter;
+  margin: 0;
+}
+table1 {
+  width: 500vh;
+  height: 500vh;
+  position: absolute;
+  top: 720vh;
+  left: 200vh;
+}
+
+.spacing1 {
+  position: absolute;
+  left: 230px;
+}

@@ -1,0 +1,57 @@
+
+
+* > * {
+    font-family:Inter ;
+    margin: 0;
+}
+
+.App-header{
+  background:white;
+  padding: 0 20px 0 20px;
+  position: absolute;
+  width: 490px;
+  height: 270px;
+  left: 400px;
+  top: 180px;
+  
+  background: #EEEEEE;
+  border-radius: 5px;
+  padding: 0 25px 0 20px;
+}
+
+hr { 
+    display: block;
+    margin-top: 1.6em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    
+  } 
+  .header2{
+    color:#0e351f;
+    left:120px;
+    font-size:24px;
+    position:relative;
+    top:20px;
+  }
+  .para1{
+    position: relative;
+    top:50px;
+    left:50px;
+  }
+  
+.closebtn{
+    
+        background-color:#0e351f;
+        border: 1px solid ;
+        position: absolute;
+        width: 115px;
+        height: 35px;
+        left: 190px;
+        top: 190px;
+        color:aliceblue;
+        border-radius: 5px;
+      
+  }
