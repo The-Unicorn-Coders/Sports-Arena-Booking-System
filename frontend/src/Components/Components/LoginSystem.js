@@ -11,8 +11,8 @@ import InputAdornment from "@mui/material/InputAdornment";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import Button from "@mui/material/Button";
+import '../Styles/LoginSystem.css';
 
-import "./LoginSystem.css";
 
 const LoginSystem = () => {
   const [showPassword, setShowPassword] = useState(false); // Define the state variable for password visibility
