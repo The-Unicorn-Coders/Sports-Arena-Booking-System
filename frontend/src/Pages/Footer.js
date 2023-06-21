@@ -23,17 +23,17 @@ return (
 		</Column>
 		<Column>
 			<Heading>About Us</Heading>
-			<FooterLink href="#">A</FooterLink>
-			<FooterLink href="#">A</FooterLink>
-			<FooterLink href="#">A</FooterLink>
-			<FooterLink href="#">A</FooterLink>
+			<FooterLink href="#">Quick Booking</FooterLink>
+			<FooterLink href="#">Search By Sport</FooterLink>
+			<FooterLink href="#">Top Rated Arenas</FooterLink>
+			<FooterLink href="#">Newly Added Arenas</FooterLink>
 		</Column>
 		<Column>
 			<Heading>Help</Heading>
-			<FooterLink href="#">h</FooterLink>
-			<FooterLink href="#">h</FooterLink>
-			<FooterLink href="#">h</FooterLink>
-			<FooterLink href="#">h</FooterLink>
+			<FooterLink href="#">Quick Booking</FooterLink>
+			<FooterLink href="#">Search By Sport</FooterLink>
+			<FooterLink href="#">Top Rated Arenas</FooterLink>
+			<FooterLink href="#">Newly Added Arenas</FooterLink>
 		</Column>
 		<Column>
 			<Heading>Social Media</Heading>
