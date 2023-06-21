@@ -25,8 +25,8 @@ function App() {
 
     <NewlyAddedArena/>
   
-
-  <Footer/>
+{/* 
+  <Footer/> */}
 
    
 
