@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 
 const arenaSchema = mongoose.Schema({
+    id: {
+        type: String,
+        required: true,
+    },
     name: {
         type: String,
         required: true
@@ -16,6 +20,10 @@ const arenaSchema = mongoose.Schema({
     description: {
         type: String,
         required: true,
+    },
+    court: {
+        type: String,
+        required: true
     }
 });
 
