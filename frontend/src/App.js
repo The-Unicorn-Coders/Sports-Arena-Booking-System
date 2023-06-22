@@ -17,6 +17,19 @@ function App() {
   return (
     <div>
     <BrowserRouter>
+    <Header/>
+    <Heroslider/>
+    <HHeader1/>
+    <Pinnedarena/>
+   
+    <ExpolerPart/>
+    <Toprated/>
+
+    <NewlyAddedArena/>
+  
+{/* 
+  <Footer/> */}
+
 
     </BrowserRouter>
     </div>
