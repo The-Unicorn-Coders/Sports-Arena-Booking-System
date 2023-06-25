@@ -23,7 +23,7 @@ const defaultProps = {};
  */
 const Toprated = () => {
     return <div>
-        <img id="Toprated1" src="Top Rated Arenas.png" alt="imagetoprated" />
+        <img id="Toprated1" src="TopRatedArenas.png" alt="imagetoprated" />
    
     </div>;
 }
