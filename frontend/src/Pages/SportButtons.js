@@ -41,7 +41,6 @@ function SportButtons(props) {
         <br></br>
       
         <div >
-
           <Stack spacing={4} direction="row">
         <Button className='sport2' variant="outlined" style={{ textTransform: 'capitalize',borderRadius:40,borderColor:'#1c5555',color:' #1c5555', }}>
           swimming
