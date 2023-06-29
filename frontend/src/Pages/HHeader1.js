@@ -1,6 +1,6 @@
 import React from 'react';
 import './Main.css';
-import SearchBox from './SearchBox';
+//import SearchBox from './SearchBox';
 
 export default function HHeader1() {
   return (
@@ -13,7 +13,7 @@ export default function HHeader1() {
         </div>
         {/* This div contains the SearchBox component which will render a search bar. */}
         <div className="bar">
-            <SearchBox/>
+
         </div>
     </div>
   )

@@ -11,7 +11,7 @@ width: 265px;
 height: 42px;
 left: 116px;
 top: 718px;
-font-family: 'Inter';
+font-family:'Inter';
 font-style: normal;
 font-weight: 700;
 font-size: 32px;
@@ -54,6 +54,5 @@ color: #1C5555;
 flex: none;
 order: 0;
 flex-grow: 0;
-top: 900px;
 position: absolute;
 }

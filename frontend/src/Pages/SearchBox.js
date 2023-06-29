@@ -4,7 +4,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
  function SearchBox() {
   return (
-    <div className='searchBody'>
+    <div className='searchBody' >
       {/* Sport field */}
       <div className='field1'>
         <center><span className='f1'>Sport</span></center>
@@ -44,22 +44,6 @@ import SearchIcon from '@mui/icons-material/Search';
             <option value='basketball'>9.00 a.m</option>
             <option value='tennis'>10.00 a.m</option>
             <option value='tennis'>11.00 a.m</option>
-          </select>
-        </center>
-      </div>
-
-      {/* Duration field */}
-      <div className='field5'>
-        <center><span className='f1'>Duration</span></center>
-        <center>
-        <select className='selectbox'>
-            <option value=''>Select Duration</option>
-            <option value='football'>0.5 Hour</option>
-            <option value='basketball'> 1 Hour</option>
-            <option value='tennis'>1.5 Hour</option>
-            <option value='tennis'>2 Hour</option>
-            <option value='tennis'>2.5 Hour</option>
-            <option value='tennis'>3 Hour</option>
           </select>
         </center>
       </div>

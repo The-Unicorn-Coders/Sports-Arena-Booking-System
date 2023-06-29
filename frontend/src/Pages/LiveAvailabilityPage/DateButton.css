@@ -1,0 +1,96 @@
+ .pricing{
+  position: absolute;
+  left: 60px;
+  right: 0%;
+  top: 1550px;
+  bottom: 0%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #1C5555;
+  }
+  .B1{
+  position: absolute;
+  top: 1590px;
+  left:-1050px;
+  }
+  .B2{
+  position: absolute;
+  top: 1590px;
+  left:-1055px;
+  
+  }
+  .B3{
+  position: absolute;
+  top: 1590px;
+  left:-1060px;
+  
+  }
+  .B4{
+  position: absolute;
+  top: 1590px;
+  left:-1065px;
+  
+  }
+  .B5{
+  position: absolute;
+  top: 1590px;
+  left:-1070px;
+  
+  }
+  .B6{
+  position: absolute;
+  top: 1590px;
+  left:-1075px;
+  }
+  .B7{
+  position: absolute;
+  top: 1590px;
+  left:-1080px;
+  }
+  .selected-day{
+      position: absolute;
+      top: 1680px;
+      left: 60px;
+      font-family: 'Inter';
+      font-size: 19px;
+      color: #1C5555;
+  }
+  .box-1{
+  position: absolute;
+  top:1750px;
+  left: 49px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 156px;
+  gap: 10px;
+  width: 127px;
+  height: 50px;
+  background: #1C5555;
+  border-radius: 10px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+  .box-2{
+  position: absolute;
+  top:1750px;
+  left:500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 156px;
+  gap: 10px;
+  width: 12px;
+  height: 50px;
+  background: #1C5555;
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  }

@@ -19,12 +19,10 @@ function App() {
     <BrowserRouter>
     <Header/>
     <Heroslider/>
-    <HHeader1/>
-    <Pinnedarena/>
-   
+
+      <Pinnedarena/>
     <ExpolerPart/>
     <Toprated/>
-
     <NewlyAddedArena/>
     <Footer/>
   

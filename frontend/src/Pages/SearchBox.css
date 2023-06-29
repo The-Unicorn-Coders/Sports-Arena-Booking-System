@@ -1,16 +1,16 @@
+
 .bar{
     position: absolute;
     width: 1018px;
     height: 154px;
     left: 116px;
-    top: 808px;
     }
 .field1{
     background: #191919;
     position: absolute;
     width: 157px;
     height: 154px;
-    left: 4px;
+    left: 110px;
     }
 .f1{
     width: 57px;
@@ -30,7 +30,7 @@
     position: absolute;
     width: 254px;
     height: 154px;
-    left: 167px;
+    left: 150px;
     
     }
 .f2{
@@ -51,7 +51,7 @@
     position: absolute;
     width: 157px;
     height: 154px;
-    left: 427px;
+    left: 415px;
     }
 
 .field4{
@@ -59,21 +59,15 @@
     position: absolute;
     width: 157px;
     height: 154px;
-    left: 590px;
+    left: 584px;
      }
-.field5{
-    background: #191919;
-    position: absolute;
-     width: 269px;
-    height: 154px;
-    left: 753px;
-     }
+
 .search{
 background: #1C5555;
 position: absolute;
 width: 215px;
 height: 154px;
-left: 1025px;
+left: 900px;
 }
 .s{
     width: 57px;
