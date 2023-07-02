@@ -1,0 +1,40 @@
+.topic{
+position: absolute;
+width: 312px;
+height: 42px;
+left: 128px;
+top: 160px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 39px;
+color: #1C5555;
+}
+.dropdown{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 3px;
+position: absolute;
+width: 207px;
+height: 56px;
+left: 128px;
+top: 228px;
+width: 183px;
+height: 24px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+display: flex;
+align-items: center;
+letter-spacing: 0.15px;
+color: #1C5555;
+flex: none;
+order: 1;
+flex-grow: 1;
+z-index: 1;
+}

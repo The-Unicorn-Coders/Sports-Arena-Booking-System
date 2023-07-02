@@ -11,7 +11,7 @@ export default function BookNow() {
 
   const highlightCurrentDate = (date) => {
     const currentDate = new Date();
-    return date.toDateString() === currentDate.toDateString();
+    return date >= currentDate;
   };
 
   const isFormValid = () => {
@@ -45,7 +45,7 @@ export default function BookNow() {
             onChange={(date) => setSelectedDate(date)}
             dateFormat='dd/MM/yyyy'
             placeholderText='Select a date'
-            highlightDates={highlightCurrentDate}
+            filterDate={highlightCurrentDate}
           />
         </div>
         <div className='sdurate'>Select a Start Time and Duration</div>
@@ -56,7 +56,12 @@ export default function BookNow() {
             onChange={(e) => setSelectedTime(e.target.value)}
           >
             <option value='court1'>None</option>
-            <option value='court1'>None</option>
+            <option value='04.00 am'>04.00 am</option>
+            <option value='04.30 am'>04.30 am</option>
+            <option value='05.00 am'>05.00 am</option>
+            <option value='05.30 am'>05.30 am</option>
+            <option value='06.00 am'>06.00 am</option>
+            <option value='06.30 am'>06.30 am</option>
             <option value='07.00 am'>07.00 am</option>
             <option value='07.30 am'>07.30 am</option>
             <option value='08.00 am'>08.00 am</option>
@@ -74,18 +79,25 @@ export default function BookNow() {
             <option value='02.00 pm'>02.00 pm</option>
             <option value='02.30 pm'>02.30 pm</option>
             <option value='03.00 pm'>03.00 pm</option>
-            <option value='03.30 pm'>03.30 pm</option>
-            <option value='04.00 pm'>04.00 pm</option>
-            <option value='04.30 pm'>04.30 pm</option>
-            <option value='05.00 pm'>05.00 pm</option>
-            <option value='05.30 pm'>05.30 pm</option>
-            <option value='06.00 pm'>06.00 pm</option>
-            <option value='06.30 pm'>06.30 pm</option>
-            <option value='07.00 pm'>07.00 pm</option>
-            <option value='07.30 pm'>07.30 pm</option>
-            <option value='08.00 pm'>08.00 pm</option>
-            <option value='08.30 pm'>08.30 pm</option>
-            <option value='09.00 pm'>09.00 pm</option>
+  <option value='03.30 pm'>03.30 pm</option>
+  <option value='04.00 pm'>04.00 pm</option>
+  <option value='04.30 pm'>04.30 pm</option>
+  <option value='05.00 pm'>05.00 pm</option>
+  <option value='05.30 pm'>05.30 pm</option>
+  <option value='06.00 pm'>06.00 pm</option>
+  <option value='06.30 pm'>06.30 pm</option>
+  <option value='07.00 pm'>07.00 pm</option>
+  <option value='07.30 pm'>07.30 pm</option>
+  <option value='08.00 pm'>08.00 pm</option>
+  <option value='08.30 pm'>08.30 pm</option>
+  <option value='09.00 pm'>09.00 pm</option>
+  <option value='09.30 pm'>09.30 pm</option>
+  <option value='10.00 pm'>10.00 pm</option>
+  <option value='10.30 pm'>10.30 pm</option>
+  <option value='11.00 pm'>11.00 pm</option>
+  <option value='11.30 pm'>11.30 pm</option>
+  <option value='12.00 am'>12.00 am</option>
+            {/* Rest of the options */}
           </select>
           <select
             className='dropdown2'
@@ -94,12 +106,14 @@ export default function BookNow() {
           >
             <option value='court1'>None</option>
             <option value='option1'>1 Hour</option>
-            <option value='option2'>1.5 Hour</option>
-            <option value='option2'>2 Hour</option>
-            <option value='option2'>2.5 Hour</option>
-            <option value='option2'>3 Hour</option>
-            <option value='option2'>3.5 Hour</option>
-            <option value='option7'>4 Hour</option>
+            <option value='option1'>1.5 Hour</option>
+            <option value='option1'>2 Hour</option>
+            <option value='option1'>2.5 Hour</option>
+            <option value='option1'>3 Hour</option>
+            <option value='option1'>3.5 Hour</option>
+            <option value='option1'>4 Hour</option>
+            <option value='option1'>4.5 Hour</option>
+            {/* Rest of the options */}
           </select>
         </div>
         <div className='scourt'>Select a Preferred Court</div>
@@ -109,10 +123,11 @@ export default function BookNow() {
           onChange={(e) => setSelectedCourt(e.target.value)}
         >
           <option value='court1'>None</option>
-          <option value='court1'>Court 1</option>
-          <option value='court2'>Court 2</option>
-          <option value='court3'>Court 3</option>
-          <option value='court4'>Court 4</option>
+          <option value='court2'>Court 1</option>
+          <option value='court3'>Court 1</option>
+          <option value='court4'>Court 1</option>
+          <option value='court5'>Court 1</option>
+          {/* Rest of the options */}
         </select>
         <button className={`bookButton ${!isFormValid() ? 'disabled' : ''}`} onClick={handleBookClick} disabled={!isFormValid()}>
           <span className='bbuttonText'>Book</span>
