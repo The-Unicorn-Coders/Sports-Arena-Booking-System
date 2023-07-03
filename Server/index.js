@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const connect = require('./db');
+const bookingRoutes = require('./routes/bookingRoutesF');
 
 const app = express();
 const port = 8081;
@@ -21,6 +22,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/arenas', require('./routes/arenasRoute'));
+app.use('/api/bookings', bookingRoutes); // Use the bookingRoutes here
 
 connect()
   .then(() => {

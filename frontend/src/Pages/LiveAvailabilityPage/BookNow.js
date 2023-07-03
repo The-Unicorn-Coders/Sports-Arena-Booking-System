@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import './BookNow.css';
+import axios from 'axios';
 
 export default function BookNow() {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -26,11 +27,30 @@ export default function BookNow() {
   const handleBookClick = () => {
     if (isFormValid()) {
       // Perform booking or submit the form
-      console.log('Booking submitted');
+      const formData = {
+        selectedDate,
+        selectedTime,
+        selectedDuration,
+        selectedCourt
+      };
+  
+      axios
+        .post('/api/bookings', formData)
+        .then(response => {
+          console.log('Booking submitted');
+          setSelectedDate(null);
+          setSelectedTime('n');
+          setSelectedDuration('');
+          setSelectedCourt('');
+        })
+        .catch(error => {
+          console.log('Error submitting booking:', error);
+        });
     } else {
       console.log('Please fill all the required fields');
     }
   };
+  
 
   return (
     <div>
@@ -105,14 +125,14 @@ export default function BookNow() {
             onChange={(e) => setSelectedDuration(e.target.value)}
           >
             <option value='court1'>None</option>
-            <option value='option1'>1 Hour</option>
-            <option value='option1'>1.5 Hour</option>
-            <option value='option1'>2 Hour</option>
-            <option value='option1'>2.5 Hour</option>
-            <option value='option1'>3 Hour</option>
-            <option value='option1'>3.5 Hour</option>
-            <option value='option1'>4 Hour</option>
-            <option value='option1'>4.5 Hour</option>
+            <option value='1'>1 Hour</option>
+            <option value='1.5'>1.5 Hour</option>
+            <option value='2'>2 Hour</option>
+            <option value='2.5'>2.5 Hour</option>
+            <option value='3'>3 Hour</option>
+            <option value='3.5'>3.5 Hour</option>
+            <option value='4'>4 Hour</option>
+            <option value='4.5'>4.5 Hour</option>
             {/* Rest of the options */}
           </select>
         </div>
@@ -124,12 +144,22 @@ export default function BookNow() {
         >
           <option value='court1'>None</option>
           <option value='court2'>Court 1</option>
-          <option value='court3'>Court 1</option>
-          <option value='court4'>Court 1</option>
-          <option value='court5'>Court 1</option>
+          <option value='court3'>Court 2</option>
+          <option value='court4'>Court 3</option>
+          <option value='court5'>Court 4</option>
           {/* Rest of the options */}
         </select>
-        <button className={`bookButton ${!isFormValid() ? 'disabled' : ''}`} onClick={handleBookClick} disabled={!isFormValid()}>
+        <button className={`bookButton ${!isFormValid() ? 'disabled' : ''}`} onClick={handleBookClick} disabled={!isFormValid()}  style={{ 
+
+    border: 'none', 
+    cursor: 'pointer',
+    // Add hover styles
+    ':hover': {
+      backgroundColor: 'black',
+      color: 'black',
+      boxShadow: '0px 0px 5px rgba(0, 0, 0, 0.2)',
+    }
+  }}>
           <span className='bbuttonText'>Book</span>
         </button>
       </div>
