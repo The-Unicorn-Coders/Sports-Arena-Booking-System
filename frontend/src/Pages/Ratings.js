@@ -240,6 +240,7 @@ const Ratings = () => {
         {ratings.length > 0 ? (
           <div className="rev_section">
             <h2>Customer Reviews</h2>
+
             {ratings.map((rating, index) => (
               <div key={index}>
                 <div className="currentDate">
@@ -247,12 +248,15 @@ const Ratings = () => {
                   <p> {rating.currentDate}</p>
                 </div>
                 <div className="comment">
+                  
                   <Rating
                     name="size-small"
                     defaultValue={rating.rating}
                     readOnly
                   />
-                  <h2 className="name">{rating.name1}</h2>
+               
+                  {/* <h2 className="name">{rating.name1}</h2> */}
+                  <p className="name" style={{fontWeight:"700"}}>Hirumalshi Gunawardhana</p>
                   <br />
                 </div>
 

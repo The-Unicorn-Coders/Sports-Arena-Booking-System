@@ -84,7 +84,7 @@ app.post("/api/ratings",  (req, res) => {
  // console.log(" ratinf");
 
   const { rating, review,currentDate,name1 } = req.body;
-  const newRating = new Rating({ rating, review,currentDate });
+  const newRating = new Rating({ rating, review,currentDate,name1 });
 
   // newRating.save((err) => {
     // if (err) {

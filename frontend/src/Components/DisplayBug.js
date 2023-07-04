@@ -31,6 +31,7 @@ const DisplayBug = () => {
   
     useEffect(() => {
       fetchBuggs();
+      
     }, []);
   
     const fetchBuggs = async () => {

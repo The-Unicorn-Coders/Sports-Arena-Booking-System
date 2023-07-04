@@ -51,7 +51,7 @@ const Bugg = () => {
     
     const submitRating = async (e) => {
      
-      e.preventDefault();
+      // e.preventDefault();
   
       if (name.trim() === "" || buggReview.trim() === "") {
           alert(" Please provide a bug");
