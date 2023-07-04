@@ -48,7 +48,7 @@ exports.cancelBooking = async (req, res) => {
             return res.status(400).json({ error: 'BookingController is already cancelled.' });
         }
 
-        // Check if the booking is for the future or today
+        // Check booking is for the future or today
         const today = new Date().toISOString().split('T')[0];
         if (booking.date > today) {
             booking.status = 'cancelled';

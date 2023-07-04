@@ -39,7 +39,7 @@ export default function BookNow() {
         .then(response => {
           console.log('Booking submitted');
           setSelectedDate(null);
-          setSelectedTime('n');
+          setSelectedTime('');
           setSelectedDuration('');
           setSelectedCourt('');
         })

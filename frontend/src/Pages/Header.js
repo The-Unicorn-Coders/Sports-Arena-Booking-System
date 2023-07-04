@@ -86,8 +86,8 @@ const Header = () => {
                 onChange={(_e, value)=> setValue(value)}
                 TabIndicatorProps={{style: {background:'#B7F500'}}}>
                 {
-                  PAGES1.map((EXPOLER,index1)=> (
-                    <Tab key= {index1}  label={EXPOLER} sx={{marginLeft: '300px'}} />
+                  PAGES1.map((EXPLORER,index1)=> (
+                    <Tab key= {index1}  label={EXPLORER} sx={{marginLeft: '300px'}} />
                   )) 
                 }
                 {

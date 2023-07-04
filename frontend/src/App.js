@@ -1,5 +1,5 @@
 import {BrowserRouter as Router,Route,Switch, BrowserRouter } from "react-router-dom";
-//import Bmain from "./Pages/BookingPage/Bmain";
+import Bmain from "./Pages/BookingPage/Bmain";
 //import HomeScreen from "./Pages/HomeScreen";
 //import BookSports from "./Pages/BookSports";
 //import ExpolerPart from "./Pages/ExpolerPart";
@@ -12,7 +12,7 @@ import {BrowserRouter as Router,Route,Switch, BrowserRouter } from "react-router
 //import Pinnedarena from "./Pages/Pinnedarena";
 //import SportButtons from "./Pages/SportButtons";
 //import Toprated from "./Pages/Toprated";
-import AvailabilityMain from "./Pages/LiveAvailabilityPage/AvailabilityMain";
+//import AvailabilityMain from "./Pages/LiveAvailabilityPage/AvailabilityMain";
 
 
 function App() {
@@ -26,11 +26,13 @@ function App() {
            <ExpolerPart/>
            <Toprated/>
            <NewlyAddedArena/>
-           <Footer/>
+  <Footer/> */}
+           {/*
            <Bmain/>
-      */}
+           <AvailabilityMain/>
+            */}
+           <Bmain/>
       
-      <AvailabilityMain/>
     </BrowserRouter>
     </div>
   );
