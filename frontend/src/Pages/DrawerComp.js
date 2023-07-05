@@ -3,7 +3,7 @@ import { Drawer, IconButton, List, ListItemButton, ListItemIcon, ListItemText } 
 import MenuIcon from '@mui/icons-material/Menu';
 
 // Define the available pages in the drawer
-const PAGES = ["EXPOLER", "ABOUT US", "HELP" , "LOG IN" , "SIGNUP"];
+const PAGES = ["EXPLORE", "ABOUT US", "HELP" , "LOG IN" , "SIGNUP"];
 
 // Define a functional component for the drawer
 const DrawerComp = () => {

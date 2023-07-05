@@ -85,11 +85,16 @@ function SearchBox() {
                     </center>
                     <center>
                         <select className="selectbox" value={time} onChange={handleTimeChange}>
-                            <option value="">Select Time</option>
-                            <option value="8am">8.00 a.m</option>
-                            <option value="9am">9.00 a.m</option>
-                            <option value="10am">10.00 a.m</option>
-                            <option value="11am">11.00 a.m</option>
+                        <option value="">Select Time</option>
+                            {Array.from({ length: 24 }, (_, i) => {
+                                const hour = i === 0 ? 12 : i;
+                                const amPm = i < 12 ? "a.m" : "p.m";
+                                return (
+                                <option key={i} value={`${hour}${amPm}`}>
+                                {`${hour}.00 ${amPm}`}
+                         </option>
+                          );
+                            })}
                         </select>
                     </center>
                 </div>

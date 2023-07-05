@@ -4,7 +4,7 @@ import Availability from './Availability'
 //import FirstButtonSec from './FirstButtonSec'
 import SelectionBox from './SelectionBox'
 import OpeningHours from './OpeningHours'
-import DateButton from './DateButton'
+//import DateButton from './DateButton'
 import BookNow from './BookNow'
 import Header from '../Header'
 
@@ -18,7 +18,6 @@ export default function AvailabilityMain() {
       {/*<div><FirstButtonSec/></div>*/}
       {<div><SelectionBox/></div>}
       {<div><OpeningHours/></div>}
-      {<div><DateButton/></div>}
       {<div><BookNow/></div>}
     </div>
   )

@@ -120,6 +120,7 @@ flex-grow: 0;
     flex-grow: 0;
     outline: none;
     border: none;
+    margin-left: 10px;
 }
 .datebox{
     font-family: 'Inter';

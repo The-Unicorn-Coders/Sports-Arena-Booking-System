@@ -1,12 +1,12 @@
 import React,{useState} from 'react'
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { AppBar, Tab, Tabs, Toolbar, Typography, Button, useMediaQuery,useTheme } from '@mui/material';
-import PlaceIcon from '@mui/icons-material/Place';
+import { AppBar, Tab, Tabs, Box, Toolbar, Typography, Button, useMediaQuery,useTheme } from '@mui/material';
+
 import DrawerComp from './DrawerComp';
 import './Header.css'
 
-const PAGES1 = ["EXPOLER"];
+const PAGES1 = ["EXPLORE"];
 const PAGES2 = ["ABOUT US"];
 const PAGES3 = ["HELP"];
 
@@ -50,44 +50,54 @@ const Header = () => {
       <AppBar className='appbar'
         sx = {{background: "#191919"}}>
         <Toolbar>
-          {/* Icon with 'ARENA' */}
-          <PlaceIcon  className='icon' 
-            sx = {{background: "#191919" , color: '#B7F500'}}/>
+          
 
           {/* If screen is < 960px, render drawer component */}
           {isMatch ? (
             <>
-              <Typography className='arena2' 
-                sx = {{fontSize: 30, fontFamily:'Bebas Neue', fontStyle:'normal'}}>
-                  ARENA
-              </Typography>
+            <Box m="1.5rem 2rem 2rem 3rem">{/*margin clockwise top, right,bottom,left*/}
+                <Box display="flex" alignItems="center" gap="0.5rem">
+                <img class="imglogo" src="Logo.png" alt="logo" style={{ width: "55px", height: "56.5px" }}/>
+                  <Typography fontWeight="bold" color="#b7f500"  sx = {{
+                            fontSize: 40, 
+                            fontFamily:'Bebas Neue',  
+                            letterSpacing: '0.1em',
+                            position: 'absolute', 
+                            top:'20px',
+                            left:'125px'
+                            }}>
+                    ARENA
+                  </Typography>
+                </Box>
+              </Box>
               <DrawerComp />
             </>
           ) : (
             <>
               {/* Title with 'ARENA' */}
-              <Typography className='arena' 
-                sx = {{
-                  fontSize: 15, 
-                  fontFamily:'Bebas Neue', 
-                  fontStyle:'normal', 
-                  color: '#B7F500',   
-                  width: 120,
-                  height: 60,
-                  fontWeight: 400,
-                  letterSpacing: 0.1
-                }}>
-                <h1>ARENA</h1>
-              </Typography>
-
+              <Box m="1.5rem 2rem 2rem 3rem">{/*margin clockwise top, right,bottom,left*/}
+                <Box display="flex" alignItems="center" gap="0.5rem">
+                <img class="imglogo" src="Logo.png" alt="logo" style={{ width: "55px", height: "56.5px" }}/>
+                  <Typography fontWeight="bold" color="#b7f500"  sx = {{
+                            fontSize: 40, 
+                            fontFamily:'Bebas Neue',  
+                            letterSpacing: '0.1em',
+                            position: 'absolute', 
+                            top:'20px',
+                            left:'125px'
+                            }}>
+                    ARENA
+                  </Typography>
+                </Box>
+              </Box>
               {/* Tabs with page names */}
               <Tabs className='tabs'
                 textColor=' #FFFFFF' value={value} 
                 onChange={(_e, value)=> setValue(value)}
                 TabIndicatorProps={{style: {background:'#B7F500'}}}>
                 {
-                  PAGES1.map((EXPLORER,index1)=> (
-                    <Tab key= {index1}  label={EXPLORER} sx={{marginLeft: '300px'}} />
+                  PAGES1.map((EXPLORE,index1)=> (
+                    <Tab key= {index1}  label={EXPLORE} sx={{marginLeft: '300px'}} />
                   )) 
                 }
                 {
