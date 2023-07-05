@@ -1,0 +1,90 @@
+.appbar {
+    width: 100%;
+    height: 100px;
+  }
+  .icon {
+    box-sizing: border-box;
+    width: 46px;
+    height: 58.43px;
+    mix-blend-mode: lighten;
+    border: 1px solid #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .arena {
+    width: 120px;
+    height: 60px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    color: #B7F500;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .arena2 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    line-height: 0px;
+    /* identical to box height */
+    color: #B7F500;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .expoler {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #FFFFFF;
+  }
+  .sign-up {
+    width: 61px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .blogin {
+    background: #191919;
+    border-color: 1px solid;
+    color: #B7F500;
+    border-color: 1px solid #B7F500;
+  }
+  .Bsignup {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 13px 28px;
+    gap: 10px;
+    background: #B7F500;
+    border-radius: 10px;
+  }
+  .menubutton {
+    position: absolute;
+  }
+  .drawer {
+    color: #000000;
+  }
+  
+  .buttons {
+    margin-left: auto;
+  }
+  
