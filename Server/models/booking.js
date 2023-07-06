@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
 const bookingSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true
+    },
     date: {
         type: Date,
         required: true
@@ -17,6 +21,7 @@ const bookingSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    
     status: {
         type: String,
         default: 'active'
