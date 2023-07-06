@@ -144,11 +144,13 @@ const Ratings = () => {
           <div>
             <div className="quantity" value={averageRating}>
               {averageRating.toFixed(1)}
+
             </div>
+           
             <Rating
               className="mainRating"
               name="size-large"
-              defaultValue={averageRating.toFixed(1)}
+              defaultValue={averageRating}
               precision={0.5}
               size="large"
               readOnly

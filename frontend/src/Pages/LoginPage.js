@@ -108,7 +108,7 @@ const LoginPage = () => {
 
             <div className='logContain'  >
             <h1>Welcome Back</h1>
-            <p>Maecenas sagittis eros quis erat suscipit, vitae.</p>
+            <p>Enter your E-mail and Password here.</p>
 
             <div className='loginContainer'>
             <label>Email</label><br></br>
