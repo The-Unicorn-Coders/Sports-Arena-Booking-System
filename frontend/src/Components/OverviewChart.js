@@ -6,12 +6,14 @@ export default function OverviewChart(){
   const theme = useTheme();
   // Sample data
   const data = [
-    { name: 'JAN', Court1: 12, Court2: 23, Court3: 12, Court4: 23 },
-    { name: 'FEB', Court1: 22, Court2: 3, Court3: 12, Court4: 23 },
-    { name: 'MAR', Court1: 13, Court2: 15, Court3: 12, Court4: 23 },
-    { name: 'APR', Court1: 44, Court2: 35, Court3: 12, Court4: 23 },
-    { name: 'MAY', Court1: 35, Court2: 45, Court3: 12, Court4: 23 },
-    { name: 'JUN', Court1: 62, Court2: 25, Court3: 12, Court4: 23 },
+    { name: 'JAN', Court1: 0, Court2: 0, Court3: 10, Court4: 0 },
+    { name: 'FEB', Court1: 0, Court2: 30, Court3: 0, Court4: 0 },
+    { name: 'MAR', Court1: 25, Court2: 0, Court3: 0, Court4: 0 },
+    { name: 'APR', Court1: 0, Court2: 0, Court3: 5, Court4: 0 },
+    { name: 'MAY', Court1: 15, Court2: 25, Court3: 12, Court4: 23 },
+    { name: 'JUN', Court1: 40, Court2: 25, Court3: 12, Court4: 23 },
+    { name: 'JUL', Court1: 30, Court2: 10, Court3: 55, Court4: 30 },
+
   ];
 
   return (

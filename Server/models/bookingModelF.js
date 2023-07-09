@@ -56,6 +56,115 @@ const bookingSchema = new mongoose.Schema({
 // Create a model based on the schema
 const Booking = mongoose.model('Booking', bookingSchema);
 
+// Define the payment schema
+const paymentSchema = new mongoose.Schema({
+  totalAmount: Number,
+  courtName: String,
+  bookingDate: Date,
+});
+
+// Define the payment model
+const Payment = mongoose.model("Payment", paymentSchema);
+
+// API endpoint for fetching income summary data
+/*app.get('/api/income-summary', async (req, res) => {
+  try {
+    const incomeSummary = await Payment.aggregate([
+      {
+        $group: {
+          _id: {
+            month: { $month: "$createdAt" },
+            courtName: "$courtName",
+          },
+          totalAmount: { $sum: "$totalAmount" },
+        },
+      },
+      {
+        $group: {
+          _id: "$_id.month",
+          monthlyIncome: {
+            $push: {
+              courtName: "$_id.courtName",
+              totalAmount: "$totalAmount",
+            },
+          },
+        },
+      },
+    ]);
+    res.json(incomeSummary);
+  } catch (error) {
+    console.error("Error fetching income summary data:", error);
+    res.status(500).json({ error: "An error occurred while fetching income summary data" });
+  }
+});
+
+// API endpoint for fetching total income for a specific day
+/*app.get("/api/total-income/:date", async (req, res) => {
+  try {
+    const { date } = req.params;
+    const startOfDay = new Date(date);
+    startOfDay.setHours(0, 0, 0, 0);
+    const endOfDay = new Date(date);
+    endOfDay.setHours(23, 59, 59, 999);
+
+    const totalIncome = await Payment.aggregate([
+      {
+        $match: {
+          bookingDate: { $gte: startOfDay, $lte: endOfDay },
+        },
+      },
+      {
+        $group: {
+          _id: null,
+          totalAmount: { $sum: "$totalAmount" },
+        },
+      },
+    ]);
+
+    res.json({ totalIncome: totalIncome.length > 0 ? totalIncome[0].totalAmount : 0 });
+  } catch (error) {
+    console.error("Error fetching total income:", error);
+    res.status(500).json({ error: "An error occurred while fetching total income" });
+  }
+});*/
+
+app.get("/api/total-income", async (req, res) => {
+  try {
+    const totalIncome = await Payment.aggregate([
+      {
+        $group: {
+          _id: null,
+          totalAmount: { $sum: "$totalAmount" },
+        },
+      },
+    ]);
+
+    res.json({ totalIncome: totalIncome.length > 0 ? totalIncome[0].totalAmount : 0 });
+  } catch (error) {
+    console.error("Error fetching total income:", error);
+    res.status(500).json({ error: "An error occurred while fetching total income" });
+  }
+});
+
+
+app.get("/api/payments", async (req, res) => {
+  try {
+    const payments = await Payment.aggregate([
+      {
+        $group: {
+          _id: "$courtName",
+          totalAmount: { $sum: "$totalAmount" },
+        },
+      },
+    ]);
+    res.json(payments);
+  } catch (error) {
+    console.error("Error fetching payment data:", error);
+    res.status(500).json({ error: "An error occurred while fetching payment data" });
+  }
+});
+
+
 // Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 
 import Header from './Header';
 import '../index.css';
@@ -13,6 +13,8 @@ import FlexBetween from "./FlexBetween";
 import PieRechartComponent from './TodayProfit';
 import OverviewChart from "./OverviewChart";
 import BookingsTable from './BookingsTable';
+import axios from 'axios';
+
 
 
 
@@ -21,8 +23,23 @@ const Dashboard = () => {
  // const theme = useTheme();
   const isNonMediumScreens = useMediaQuery("(min-width: 1200px)");
   const [user, setUser] = useState({ name: "Mary" });
+  const [totalIncome, setTotalIncome] = useState(0);
 
 
+  useEffect(() => {
+    fetchTotalIncome();
+  }, []);
+
+  const fetchTotalIncome = async () => {
+    try {
+      const response = await axios.get("/api/total-income");
+      const { totalIncome } = response.data;
+      setTotalIncome(totalIncome);
+    } catch (error) {
+      console.error("Error fetching total income:", error);
+    }
+  };
+  
 
   return (
     <div className="App">
@@ -106,7 +123,7 @@ const Dashboard = () => {
                   Hey {user.name}, here is your total income for the day
             </Typography>
             <Typography sx={{fontSize:"18px", fontWeight: 600}} color="#1E293B">
-                  Rs.224,807.27
+                Rs. {totalIncome.toFixed(2)}
             </Typography>
             <div>
                 <PieRechartComponent />
