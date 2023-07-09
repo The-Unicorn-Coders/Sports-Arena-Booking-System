@@ -3,12 +3,11 @@ const cors = require('cors');
 const morgan = require('morgan');
 const connect = require('./db');
 const bookingRoutes = require('./routes/bookingRoutesF');
-const arenasRoute = require('./routes/arenasRoute');
 const openingTimeRoutes = require('./routes/openingTimeRoutes');
 
 
 const app = express();
-const port = 8081;
+const port = 8080;
 
 app.use(express.json());
 app.use(
@@ -24,11 +23,11 @@ app.get('/', (req, res) => {
   res.status(201).json('Home GET Request');
 });
 
-app.use('/api/arenas', require('./routes/arenasRoute'));
-app.use('/api/bookings', bookingRoutes);
-app.use('/api/openingTimes', openingTimeRoutes);
 
-connect()
+app.use('/api/bookings', bookingRoutes);
+app.use('/api/openingTimes', openingTimeRoutes)
+
+{/*connect()
   .then(() => {
     app.listen(port, () => {
       console.log(`Server connected to http://localhost:${port}`);
@@ -36,4 +35,4 @@ connect()
   })
   .catch((error) => {
     console.log('Invalid database connection...!', error);
-  });
+  });*/}
