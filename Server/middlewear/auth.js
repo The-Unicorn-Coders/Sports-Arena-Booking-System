@@ -1,8 +1,8 @@
-import jwt from 'jsonwebtoken';
+/*import jwt from 'jsonwebtoken';
 import ENV from '../config.js'
 
 /** auth middleware */
-export default async function Auth(req, res, next){
+/*export default async function Auth(req, res, next){
     try {
 
         // access authorize header to validate request
@@ -27,4 +27,4 @@ export function localVariables(req, res, next){
         resetSession : false
     }
     next()
-}
+}*/
