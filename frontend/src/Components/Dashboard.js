@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
-import axios from 'axios';
+
 import Header from './Header';
 import '../index.css';
 import {
   Box,
   Typography,
-  useTheme,
   useMediaQuery,
 } from "@mui/material";
 import AddBoxRoundedIcon from '@mui/icons-material/AddBoxRounded';
@@ -19,9 +18,10 @@ import BookingsTable from './BookingsTable';
 
 
 const Dashboard = () => {
-  const theme = useTheme();
+ // const theme = useTheme();
   const isNonMediumScreens = useMediaQuery("(min-width: 1200px)");
-  
+  const [user, setUser] = useState({ name: "Mary" });
+
 
 
   return (
@@ -103,7 +103,7 @@ const Dashboard = () => {
         >
             <Typography variant="h5"  style={{ fontWeight: 600, color:"#1C5555" }} gutterBottom>Total Income for Today</Typography>
             <Typography sx={{fontSize:"21px", flex: 1}}color="#475569"  >
-                  Hey Mark, here is your total income for the day
+                  Hey {user.name}, here is your total income for the day
             </Typography>
             <Typography sx={{fontSize:"18px", fontWeight: 600}} color="#1E293B">
                   Rs.224,807.27

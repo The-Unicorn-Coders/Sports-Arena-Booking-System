@@ -37,7 +37,7 @@ const Header = () => {
   const isOpen = Boolean(anchorEl);
   const handleClick = (event) => setAnchorEl(event.currentTarget);
   const handleClose = () => setAnchorEl(null);
-  const [user, setUser] = useState({ name: "John Doe" });
+  const [user, setUser] = useState({ name: "Mary" });
 
      // State to keep track of the current active tab
   const [value, setValue] = useState();
@@ -62,7 +62,7 @@ const Header = () => {
             <>
             <Box m="1.5rem 2rem 2rem 3rem">{/*margin clockwise top, right,bottom,left*/}
                 <Box display="flex" alignItems="center" gap="0.5rem">
-                <img className="imglogo" src="Logo.png" alt="logo" style={{ width: "55px", height: "56.5px" }}/>
+                <img class="imglogo" src="Logo.png" alt="logo" style={{ width: "55px", height: "56.5px" }}/>
                   <Typography fontWeight="bold" color="#b7f500"  sx = {{
                             fontSize: 40, 
                             fontFamily:'Bebas Neue',  

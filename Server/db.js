@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+/*const mongoose = require("mongoose");
 const { MongoMemoryServer } = require("mongodb-memory-server");
 const ENV = require("./config.js");
 
@@ -17,4 +17,4 @@ async function connect() {
     return db;
 }
 
-module.exports = connect;
+module.exports = connect;*/

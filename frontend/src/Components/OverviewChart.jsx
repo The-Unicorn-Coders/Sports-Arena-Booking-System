@@ -17,7 +17,7 @@ export default function OverviewChart(){
   return (
     <React.Fragment>
       <Typography variant="h5" style={{ fontWeight: 600, color: '#1C5555' }}>
-        Profit Summary
+        Income Summary
       </Typography>
 
       <div style={{ width: '100%', height: 280 }}>

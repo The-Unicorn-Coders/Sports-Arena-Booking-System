@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 const columns = [
-  { field: 'id', headerName: 'ID', flex:1, },
+  { field: 'bookingid', headerName: 'ID', flex:1, },
   { field: 'name', headerName: 'User', flex:1 },
   { field: 'court', 
   headerName: 'Court', 
@@ -71,18 +71,27 @@ export default function BookingsTable() {
   const [bookings, setBookings] = useState([]);
 
   useEffect(() => {
-    axios
-      .get('http://localhost:8081/getbookings')
+    const fetchData = async e => {
+      try{
+      await axios.get('http://localhost:8081/api/data')
       .then((response) => {
         setBookings(response.data);
       })
       .catch((err) => {
         console.log(err);
+        
       });
-  }, []);
+      }catch(error){
+        console.log(error)
+      }
+    }
 
-  const rows = bookings.map((booking) => ({
-    id: booking.id,
+    fetchData();
+},[]);
+
+  const rows = bookings.map((booking,index) => ({
+    id:index,
+    bookingid: booking._id,
     name: booking.name,
     court: booking.selectedCourt,
     date: booking.selectedDate,
@@ -90,6 +99,7 @@ export default function BookingsTable() {
     duration: booking.selectedDuration,
   }));
 
+  
   return (
     <div style={{width: '100%' }}>
       <ThemeProvider theme={customTheme}>
