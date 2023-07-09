@@ -23,7 +23,7 @@ const PAGES = ['EXPLORE', 'ABOUT US', 'HELP'];
 const DrawerComp = () => {
   // Use state to track whether the drawer is open or closed
   const [openDrawer, setOpenDrawer] = useState(false);
-  const [user, setUser] = useState({ name: 'John Doe' });
+  const [user, setUser] = useState({ name: 'Mary' });
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClick = (event) => {

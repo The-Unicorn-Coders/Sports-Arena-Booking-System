@@ -1,5 +1,4 @@
 import React,{useState} from 'react'
-
 import { AppBar, Tab, Tabs, Box, Toolbar, Typography, Button, Menu, MenuItem, useMediaQuery,useTheme } from '@mui/material';
 import profileImage from '../assets/profile.jpeg';
 import DrawerComp from './DrawerComp';
@@ -38,7 +37,7 @@ const Header = () => {
   const isOpen = Boolean(anchorEl);
   const handleClick = (event) => setAnchorEl(event.currentTarget);
   const handleClose = () => setAnchorEl(null);
-const [user, setUser] = useState({ name: "John Doe" });
+const [user, setUser] = useState({ name: "Mary" });
 
      // State to keep track of the current active tab
   const [value, setValue] = useState();

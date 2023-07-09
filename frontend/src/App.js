@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import axios from 'axios';
 import Payment from "./Components/payment";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import BookNow from './Components/BookNow';
 
 function App() {
 
@@ -12,6 +13,9 @@ function App() {
     
       <BrowserRouter>
         <Routes>
+
+        <Route path="/book" element={<BookNow />} />
+
           <Route path="/payment" element={<Payment />} />
           
         </Routes>

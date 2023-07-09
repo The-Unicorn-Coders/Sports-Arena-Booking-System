@@ -1,21 +1,21 @@
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
-const connect = require('./db');
+//const connect = require('./db');
+const bookingRoutes= require('./routes/bookingRoutesF')
+const Booking = require('./models/bookingModelF');
 
-const bookingsRoute = require('./routes/bookingsRoute')
+
+//const bookingsRoute = require('./routes/bookingsRoute')
 
 
 const app = express();
-const port = 3330;
+const port = 8080;
 
-app.use(express.json());
-app.use(
-  cors({
-    origin: 'http://localhost:3000',
-    credentials: true,
-  })
-);
+
+
+app.use(express.json())
+app.use(cors());
 app.use(morgan('tiny'));
 app.disable('x-powered-by');
 
@@ -24,10 +24,12 @@ app.get('/', (req, res) => {
 });
 
 
-app.use ('/bookingsRoute', bookingsRoute )
+/*app.use ('/bookingsRoute', bookingsRoute );*/
+app.use ('/api/bookings', bookingRoutes);
 
 
-connect()
+
+/*connect()
   .then(() => {
     app.listen(port, () => {
       console.log(`Server connected to http://localhost:${port}`);
@@ -35,4 +37,4 @@ connect()
   })
   .catch((error) => {
     console.log('Invalid database connection...!', error);
-  });
+  });*/

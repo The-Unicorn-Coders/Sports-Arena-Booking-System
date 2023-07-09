@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import './BookNow.css';
 import axios from 'axios';
 
 export default function BookNow() {
+  const navigate = useNavigate();
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState('');
   const [selectedDuration, setSelectedDuration] = useState('');
   const [selectedCourt, setSelectedCourt] = useState('');
+  const [name, setName] = useState({ name: "Mary" });
+
 
   const highlightCurrentDate = (date) => {
     const currentDate = new Date();
@@ -31,17 +35,23 @@ export default function BookNow() {
         selectedDate,
         selectedTime,
         selectedDuration,
-        selectedCourt
+        selectedCourt,
+        name: name.name
       };
-  
+
       axios
-        .post('/api/bookings', formData)
+        .post('/api/data', formData)
         .then(response => {
           console.log('Booking submitted');
           setSelectedDate(null);
           setSelectedTime('');
           setSelectedDuration('');
           setSelectedCourt('');
+          setName('');
+
+
+          // Redirect to the booking page and pass the selected data as query parameters
+          navigate(`/payment?selectedTime=${selectedTime}&selectedDate=${selectedDate}&selectedDuration=${selectedDuration}&selectedCourt=${selectedCourt}`);
         })
         .catch(error => {
           console.log('Error submitting booking:', error);
@@ -50,6 +60,7 @@ export default function BookNow() {
       console.log('Please fill all the required fields');
     }
   };
+
   
 
   return (
@@ -75,48 +86,26 @@ export default function BookNow() {
             defaultValue='court1'
             onChange={(e) => setSelectedTime(e.target.value)}
           >
-            <option value='court1'>None</option>
-            <option value='04.00 am'>04.00 am</option>
-            <option value='04.30 am'>04.30 am</option>
-            <option value='05.00 am'>05.00 am</option>
-            <option value='05.30 am'>05.30 am</option>
-            <option value='06.00 am'>06.00 am</option>
-            <option value='06.30 am'>06.30 am</option>
-            <option value='07.00 am'>07.00 am</option>
-            <option value='07.30 am'>07.30 am</option>
-            <option value='08.00 am'>08.00 am</option>
-            <option value='08.30 am'>08.30 am</option>
-            <option value='09.00 am'>09.00 am</option>
-            <option value='09.30 am'>09.30 am</option>
-            <option value='10.00 am'>10.00 am</option>
-            <option value='10.30 am'>10.30 am</option>
-            <option value='11.00 am'>11.00 am</option>
-            <option value='11.30 am'>11.30 am</option>
-            <option value='12.00 pm'>12.00 pm</option>
-            <option value='12.30 pm'>12.30 pm</option>
-            <option value='01.00 pm'>01.00 pm</option>
-            <option value='01.30 pm'>01.30 pm</option>
-            <option value='02.00 pm'>02.00 pm</option>
-            <option value='02.30 pm'>02.30 pm</option>
-            <option value='03.00 pm'>03.00 pm</option>
-  <option value='03.30 pm'>03.30 pm</option>
-  <option value='04.00 pm'>04.00 pm</option>
-  <option value='04.30 pm'>04.30 pm</option>
-  <option value='05.00 pm'>05.00 pm</option>
-  <option value='05.30 pm'>05.30 pm</option>
-  <option value='06.00 pm'>06.00 pm</option>
-  <option value='06.30 pm'>06.30 pm</option>
-  <option value='07.00 pm'>07.00 pm</option>
-  <option value='07.30 pm'>07.30 pm</option>
-  <option value='08.00 pm'>08.00 pm</option>
-  <option value='08.30 pm'>08.30 pm</option>
-  <option value='09.00 pm'>09.00 pm</option>
-  <option value='09.30 pm'>09.30 pm</option>
-  <option value='10.00 pm'>10.00 pm</option>
-  <option value='10.30 pm'>10.30 pm</option>
-  <option value='11.00 pm'>11.00 pm</option>
-  <option value='11.30 pm'>11.30 pm</option>
-  <option value='12.00 am'>12.00 am</option>
+                        <option value='09:00:00'>09.00 am</option>
+                        <option value='09:30:00'>09.30 am</option>
+                        <option value='10:00:00'>10.00 am</option>
+                        <option value='10:30:00'>10.30 am</option>
+                        <option value='11:00:00'>11.00 am</option>
+                        <option value='11:30:00'>11.30 am</option>
+                        <option value='12:00:00'>12.00 noon</option>
+                        <option value='12:30:00'>12.30 pm</option>
+                        <option value='13:00:00'>01.00 pm</option>
+                        <option value='13:30:00'>01.30 pm</option>
+                        <option value='14:00:00'>02.00 pm</option>
+                        <option value='14:30:00'>02.30 pm</option>
+                        <option value='15:00:00'>03.00 pm</option>
+                        <option value='15:30:00'>03.30 pm</option>
+                        <option value='15:30:00'>04.00 pm</option>
+                        <option value='15:30:00'>04.30 pm</option>
+                        <option value='15:30:00'>05.00 pm</option>
+                        <option value='15:30:00'>05.30 pm</option>
+
+ 
             {/* Rest of the options */}
           </select>
           <select
@@ -142,11 +131,11 @@ export default function BookNow() {
           defaultValue='court1'
           onChange={(e) => setSelectedCourt(e.target.value)}
         >
-          <option value='court1'>None</option>
-          <option value='court2'>Court 1</option>
-          <option value='court3'>Court 2</option>
-          <option value='court4'>Court 3</option>
-          <option value='court5'>Court 4</option>
+          <option value='Court'>None</option>
+          <option value='Court 1'>Court 1</option>
+          <option value='Court 2'>Court 2</option>
+          <option value='Court 3'>Court 3</option>
+          <option value='Court 4'>Court 4</option>
           {/* Rest of the options */}
         </select>
         <button className={`bookButton ${!isFormValid() ? 'disabled' : ''}`} onClick={handleBookClick} disabled={!isFormValid()}  style={{ 
