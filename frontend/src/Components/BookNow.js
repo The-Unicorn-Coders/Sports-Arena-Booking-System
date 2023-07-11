@@ -4,6 +4,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import './BookNow.css';
 import axios from 'axios';
+import Header from './Header';
 
 export default function BookNow() {
   const navigate = useNavigate();
@@ -40,7 +41,7 @@ export default function BookNow() {
       };
 
       axios
-        .post('/api/data', formData)
+        .post('http://localhost:5001/api/data', formData)
         .then(response => {
           console.log('Booking submitted');
           setSelectedDate(null);
@@ -65,6 +66,7 @@ export default function BookNow() {
 
   return (
     <div>
+    <Header/>
       <div className='frame'>
         <div className='bTopic'>Make a Booking</div>
         <div className='bline'></div> {/* Added line */}
@@ -100,10 +102,10 @@ export default function BookNow() {
                         <option value='14:30:00'>02.30 pm</option>
                         <option value='15:00:00'>03.00 pm</option>
                         <option value='15:30:00'>03.30 pm</option>
-                        <option value='15:30:00'>04.00 pm</option>
-                        <option value='15:30:00'>04.30 pm</option>
-                        <option value='15:30:00'>05.00 pm</option>
-                        <option value='15:30:00'>05.30 pm</option>
+                        <option value='16:30:00'>04.00 pm</option>
+                        <option value='16:30:00'>04.30 pm</option>
+                        <option value='17:30:00'>05.00 pm</option>
+                        <option value='17:30:00'>05.30 pm</option>
 
  
             {/* Rest of the options */}
@@ -115,13 +117,13 @@ export default function BookNow() {
           >
             <option value='court1'>None</option>
             <option value='1'>1 Hour</option>
-            <option value='1.5'>1.5 Hour</option>
-            <option value='2'>2 Hour</option>
-            <option value='2.5'>2.5 Hour</option>
-            <option value='3'>3 Hour</option>
-            <option value='3.5'>3.5 Hour</option>
-            <option value='4'>4 Hour</option>
-            <option value='4.5'>4.5 Hour</option>
+            <option value='1.5'>1.5 Hours</option>
+            <option value='2'>2 Hours</option>
+            <option value='2.5'>2.5 Hours</option>
+            <option value='3'>3 Hours</option>
+            <option value='3.5'>3.5 Hours</option>
+            <option value='4'>4 Hours</option>
+            <option value='4.5'>4.5 Hours</option>
             {/* Rest of the options */}
           </select>
         </div>
