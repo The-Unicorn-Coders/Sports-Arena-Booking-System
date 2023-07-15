@@ -1,18 +1,20 @@
-import mongoose from "mongoose";
+{/*const mongoose = require("mongoose");
+const { MongoMemoryServer } = require("mongodb-memory-server");
+const ENV = require("./config.js");
 
-import { MongoMemoryServer } from "mongodb-memory-server";
-import ENV from "./config.js";
-
-async function connect(){
-
+async function connect() {
     const mongodb = await MongoMemoryServer.create();
     const getUri = mongodb.getUri();
 
-    mongoose.set('strictQuery', true)
-    // const db = await mongoose.connect(getUri);
-    const db = await mongoose.connect(ENV.ATLAS_URI);
-    console.log("Database Connected")
+    mongoose.set("strictQuery", true);
+
+    const db = await mongoose.connect(getUri || ENV.ATLAS_URI, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    });
+
+    console.log("Database Connected");
     return db;
 }
 
-export default connect;
+module.exports = connect;*/}
