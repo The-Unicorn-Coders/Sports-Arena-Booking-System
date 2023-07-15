@@ -1,0 +1,138 @@
+
+.appbar {
+    position: absolute;
+    width: 1512px;
+    height: 100px;
+    left: 0px;
+    top: 1px;
+    }
+    *.icon{
+        position: absolute;
+        top: 40px;
+        left: 50px;
+        box-sizing: border-box;
+        width: 46px;
+        height: 58.43px;
+        mix-blend-mode: lighten;
+        border: 1px solid #000000;
+        flex: none;
+        order: 0;
+        flex-grow: 0;  
+    }
+    .arena {
+        
+            position: absolute;
+            top: 10px;
+            left: 90px;
+        
+        width: 120px;
+        height: 60px;
+        font-family: 'Bebas Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 60px;
+        /* identical to box height */
+        letter-spacing: 0.1em;
+        color: #B7F500;
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0; 
+    }
+    .arena2 {
+            
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    line-height: 0px;
+    /* identical to box height */
+    color: #B7F500;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0; 
+    
+    
+    }
+    .expoler{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #FFFFFF;
+    }
+    
+    
+    .sign-up{
+    width: 61px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+   
+    }
+    .blogin{   
+    
+    position: absolute;
+    left: 1100px;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background:#191919;
+    border-color: 1px solid;
+    color:#B7F500;
+    border-color:1px solid #B7F500 ;
+    }
+    
+    .Bsignup{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 13px 28px;
+    gap: 10px;
+    position: absolute;
+    left: 80%;
+    top: 29.25%;
+    bottom: 28.3%;
+    background: #B7F500;
+    border-radius: 10px;
+    }
+    
+    .menubutton {
+        position: absolute;
+        top: 25px;
+        left: -30px;
+    }
+    
+    .drawer{
+        color: #000000;
+    
+    }
+    .tabs {
+        position: absolute;
+        top: 30px;
+        left: 90px;
+    }
+    .buttons{
+        margin-left: 75%;
+        position: absolute;
+        top: 30px;
+        left: 90px;  
+    }
+    

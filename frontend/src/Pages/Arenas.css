@@ -1,0 +1,102 @@
+.search-part{
+  width: 1512px;
+  height: 284px;
+  margin-top: 800px;
+  left: -12px;
+
+}
+.sports{
+width: Fixed (1,512px);
+height: Hug (1,216px);
+margin-top: -70px;
+}
+
+
+.live-availability-container {
+  position: relative;
+  padding-top: 50px;
+}
+
+.xbuttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 14px;
+  width: 1156px;
+  height: 114px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  top: 250px;
+  position: absolute;
+
+  border-radius: 25px;
+  margin-top: 30px;
+  
+
+  
+
+}
+
+.cricket,
+.sport2 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 35px;
+  gap: 10px;
+  height: 50px;
+  border-radius: 25px;
+  flex: none;
+  flex-grow: 0;
+}
+
+.cricket {
+  width: 210px;
+  background: #1c5555;
+  color: #fff;
+}
+
+.sport2 {
+  width: 130px;
+  background: #fff;
+  border: 3px solid #1c5555;
+  color: #1c5555;
+
+}
+
+.xbuttons button:hover {
+  background-color: #1c5555;
+  color: #fff;
+}
+
+.topic {
+
+  right: 0%;
+  top: 150px;
+  bottom: 200px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #1c5555;
+  position: absolute;
+}
+
+.caption {
+  position: absolute;
+  left: 128px;
+  right: 0%;
+  top: 820px;
+  bottom: 0%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}

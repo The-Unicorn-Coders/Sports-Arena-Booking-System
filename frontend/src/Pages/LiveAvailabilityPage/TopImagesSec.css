@@ -1,0 +1,49 @@
+.Picture1{
+  position: absolute;
+  width: 775px;
+  height: 338px;
+  left: 50px;
+  top: 120px;
+  border-radius: 10px 0px 0px 0px;
+  }
+  .Picture2{
+  position: absolute;
+  width: 235px;
+  height: 166px;
+  left:830px;
+  top: 120px;
+  }
+  .Picture3{
+  position: absolute;
+  width: 237px;
+  height: 166px;
+  left: 1068px;
+  right:50px;
+  top: 120px;
+  border-radius: 0px 10px 0px 0px;
+  }
+  .Picture4{
+  position: absolute;
+  width: 235px;
+  height: 167px;
+  left: 830px;
+  top: 291px;
+  }
+  .Picture5{
+  position: absolute;
+  width: 238px;
+  height: 167px;
+  left: 1068px;
+  right:50px;
+  top: 291px;
+  border-radius: 0px;
+  }
+  .contactBox{
+    position: absolute;
+    width: 1256px;
+    height: 244px;
+    left: 50px;
+    top: 463px;
+    background: #1C5555;
+    border-radius: 0px 0px 10px 10px;
+    }

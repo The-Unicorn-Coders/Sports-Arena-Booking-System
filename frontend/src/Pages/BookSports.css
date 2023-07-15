@@ -1,0 +1,52 @@
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 3rem;
+    align-items: center;
+  }
+  
+  
+  .card{
+    margin: auto;
+    padding: 0.5rem;
+  }
+  
+  .frame-Home {
+    width: 360px;
+    height: 434px;
+    border-style: solid;
+    border-color: #1C5555;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .button {
+    width: 160px;
+    height: 40px;
+    padding: 13px 35px 13px 35px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1C5555;
+  }
+  
+  .img-set {
+    width: 356px;
+    height: 240px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  
+  .second-section {
+    
+    height: 175px;
+    left: 438px;
+    margin-top: 15px;
+    border-radius: 0px 0px 10px 10px;
+    background: #1C5555;
+    color: #ffffff;
+  }

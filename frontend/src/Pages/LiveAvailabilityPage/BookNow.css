@@ -1,0 +1,156 @@
+.frame{
+position: absolute;
+width: 438px;
+height: 496px;
+left: 800px;
+top:720px;
+}
+.bTopic{
+position: absolute;
+width: 521px;
+height: 42px;
+left: 10px;
+top: 27px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 39px;
+text-align: center;
+color: #1C5555;
+
+
+}
+.bline{
+position: absolute;
+width: 392px;
+height: 0px;
+left: 130px;
+top: 80px;
+
+border: 2px solid #1C5555;
+}
+.sdate{
+position: absolute;
+width: 120px;
+height: 22px;
+left: 145px;
+top: 106px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: #000000;
+}
+.sdurate{
+  position: absolute;
+  width: 280px;
+  height: 22px;
+  left: 145px;
+  top: 214px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.scourt{
+position: absolute;
+width: 220px;
+height: 22px;
+left: 145px;
+top: 322px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: #000000;
+}
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  gap: 2px;
+  position: absolute;
+  height: 56px;
+  margin-left: -140px;
+  margin-top: 10px;
+  background: #1C5555;
+  color: #eef5f5;
+  text-align: center;
+}
+
+.dropdown1{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 3px;
+position: absolute;
+width: 207px;
+height: 56px;
+left: 120px;
+top: 246px;
+}
+.dropdown2{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 3px;
+position: absolute;
+width: 164px;
+height: 56px;
+left: 340px;
+top: 246px;
+}
+.dropdown3{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 3px;
+position: absolute;
+width: 393px;
+height: 56px;
+left: 120px;
+top: 354px;
+}
+.bookButton{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 13px 35px;
+gap: 10px;
+position: absolute;
+width: 119px;
+height: 50px;
+left: 140px;
+top: 430px;
+background: #1C5555;
+border-radius: 10px;
+}
+.bbuttonText{
+width: 50px;
+height: 24px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #FFFFFF;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.bookButton.disabled {
+  background-color: #a0f0e3;
+  cursor: not-allowed;
+}

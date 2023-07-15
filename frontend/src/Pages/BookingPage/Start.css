@@ -1,0 +1,19 @@
+
+
+.bold-header {
+  font-weight: bold;
+}
+
+.cancelButton {
+  background-color: #de3f41;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+
+
+

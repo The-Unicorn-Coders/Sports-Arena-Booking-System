@@ -1,0 +1,33 @@
+.topic2 {
+  position: absolute;
+  top: 1210px;
+  left: 59px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #1C5555;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 1400px;
+  left: 90px;
+  font-family: 'Inter';
+  font-style: normal;
+  align-items: flex-start;
+  
+}
+
+.time-slot {
+  margin-bottom: 14px; 
+}
+
+
+.dropdown{
+  margin-left: 70px;
+  margin-top: 1275px;
+}
